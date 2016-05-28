@@ -1,0 +1,646 @@
+\hypertarget{class_task}{}\section{Task Class Reference}
+\label{class_task}\index{Task@{Task}}
+
+
+Implémentation de la classe abstraite \hyperlink{class_task}{Task}, classe de base de notre projet avec ses attibuts et ses méthodes.  
+
+
+
+
+{\ttfamily \#include $<$task.\+h$>$}
+
+
+
+Inheritance diagram for Task\+:
+% FIG 0
+
+
+Collaboration diagram for Task\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_task_1_1task_compare}{task\+Compare}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_task_a4c16d78703f1fb014849a7c9c48f33f3}{set\+Parent} (\hyperlink{class_task}{Task} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, lie la tache actuelle à une tache parente. \end{DoxyCompactList}\item 
+\hyperlink{class_task}{Task} $\ast$ \hyperlink{class_task_a5b31a480993cee5e7468e6fdf46970cc}{get\+Parent} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupère le parent lié à la tache courante. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_task_a8d24d067d2558f8b9cd032670f7be0d4}{get\+Title} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupère le titre de la tache courante. \end{DoxyCompactList}\item 
+void \hyperlink{class_task_ad459be77e9e2f0df98d65a661fb5581b}{set\+Title} (Q\+String title)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, affecte un titre à la tache courante. \end{DoxyCompactList}\item 
+Q\+Date\+Time \hyperlink{class_task_acf0a763d8b900e9536cc718b075c6837}{get\+Disponibility} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupère la date potentielle de début de la tache. \end{DoxyCompactList}\item 
+void \hyperlink{class_task_a564bd74ab3dbae672d1cfa41be993032}{set\+Disponibility} (Q\+Date\+Time disponibility)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, affecte un début potentiel de tache à la tache courante. \end{DoxyCompactList}\item 
+Q\+Date\+Time \hyperlink{class_task_a876d5bcfaf94fc3e7beda829a9a07bcc}{get\+Deadline} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupère la deadline de la tache. \end{DoxyCompactList}\item 
+void \hyperlink{class_task_a55c6d95a49a1e9af2c08ab3f3531b04e}{set\+Deadline} (Q\+Date\+Time deadline)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, affecte une deadline à la tache courante. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_task}{Task} $\ast$ $>$ \& \hyperlink{class_task_ae45552bcf7902c4bb22e108fed9b8c95}{get\+Prerequisite} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupère le tableau des \hyperlink{class_task}{Task} requise à l\textquotesingle{}accomplissement de la tache courante. \end{DoxyCompactList}\item 
+void \hyperlink{class_task_a47743716efa458dc1ed004d598ed7184}{set\+Status} (bool status)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, affecte à la tache le statut \char`\"{}effectué\char`\"{} ou non. \end{DoxyCompactList}\item 
+bool \hyperlink{class_task_a87f84f68d49f57f5f5bce9ec08854f1c}{get\+Status} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupère le statut de réalisation de la tache courante. \end{DoxyCompactList}\item 
+void \hyperlink{class_task_a79a7113a964451027787407d988b2586}{add\+Prerequisite} (\hyperlink{class_task}{Task} $\ast$prerequisite)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, aajoute une tache requise à la réalisation de la tache actuelle. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_task_a1634bc579750e601d5ab63fe3a7e8259}{display} (Q\+Standard\+Item $\ast$parent)=0
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+bool \hyperlink{class_task_ac6609b3e2460c657f573f944c7970942}{are\+Prerequisite\+Scheduled} ()
+\begin{DoxyCompactList}\small\item\em Détermine si les tache requise pour la tache courant sont toutes programmées. \end{DoxyCompactList}\item 
+bool \hyperlink{class_task_ae0af351b77852045fe6107fd81f5cf0e}{operator$<$} (const \hyperlink{class_task}{Task} \&b) const 
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur de comparaison \char`\"{}$<$\char`\"{}, nécessaire à la comparaison de deux taches. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_task_a2deed8c5e320f3c09a842a2cb944457e}{$\sim$\+Task} ()=0
+\begin{DoxyCompactList}\small\item\em Destructeur virtuelle de la classe \hyperlink{class_task}{Task}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_task_a0182666815bb65cf7e88422eb71dd831}{check\+Prerequisite} (\hyperlink{class_task}{Task} $\ast$task, \hyperlink{class_task}{Task} $\ast$prerequisite\+Task)
+\begin{DoxyCompactList}\small\item\em Méthode statit vérifiant si les taches requises sont des dates de début potentiel avant la tache courant. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_task_a06760406c8dbfc2eae5c39f22164f7a0}{check\+Attaskd\+To} (\hyperlink{class_task}{Task} $\ast$task, \hyperlink{class_task}{Task} $\ast$mother\+Task)
+\begin{DoxyCompactList}\small\item\em Méthode statit vérifiant si la date de disponibilité d\textquotesingle{}une tache parente d\textquotesingle{}une tache est bien antérieure à celle de la tache courante. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_task_ae40633696ddb87d37de1f0015b840c34}{Task} (Q\+String title, Q\+Date\+Time disponibility, Q\+Date\+Time deadline)
+\begin{DoxyCompactList}\small\item\em Liste des tache requise pour effectuer la tache courante. \end{DoxyCompactList}\item 
+\hyperlink{class_task_a4413ddd0e29a4588808ee1f8f3367b5c}{Task} (const \hyperlink{class_task}{Task} \&source)
+\begin{DoxyCompactList}\small\item\em Constructeur de recopie la classe \hyperlink{class_task}{Task}. \end{DoxyCompactList}\item 
+\hyperlink{class_task}{Task} \& \hyperlink{class_task_a5ffb0ba25d5fccd6cafea4153df1bee3}{operator=} (const \hyperlink{class_task}{Task} \&source)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur d\textquotesingle{}affectation \char`\"{}=\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_task_aa9c0fa08a6d4bb6b7390b69ba15baff2}{m\+\_\+title}
+\item 
+Q\+Date\+Time \hyperlink{class_task_aede98e97b4be2a2b146eddb761619a6c}{m\+\_\+disponibility}
+\begin{DoxyCompactList}\small\item\em Titre de la tache. \end{DoxyCompactList}\item 
+Q\+Date\+Time \hyperlink{class_task_ad8c46e8e9af82fa4315d77679af7619b}{m\+\_\+deadline}
+\begin{DoxyCompactList}\small\item\em Date à partir de quand on peut potentiellement la commencer. \end{DoxyCompactList}\item 
+bool \hyperlink{class_task_a1036ac363062b06e1abf7b7d6cbcb048}{m\+\_\+status}
+\begin{DoxyCompactList}\small\item\em Deadline de la tache. \end{DoxyCompactList}\item 
+\hyperlink{class_task}{Task} $\ast$ \hyperlink{class_task_ab7653d17e9111aab6f5664d68815e5be}{m\+\_\+parent}
+\begin{DoxyCompactList}\small\item\em Statut de la tache \+: true si déjà effectuée, false sinon. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_task}{Task} $\ast$ $>$ \hyperlink{class_task_a1d612002385787e4eedd460704d54ded}{m\+\_\+prerequisite}
+\begin{DoxyCompactList}\small\item\em Pointeur vers la tâche parente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implémentation de la classe abstraite \hyperlink{class_task}{Task}, classe de base de notre projet avec ses attibuts et ses méthodes. 
+
+Definition at line 27 of file task.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_task_ae40633696ddb87d37de1f0015b840c34}{}\index{Task@{Task}!Task@{Task}}
+\index{Task@{Task}!Task@{Task}}
+\subsubsection[{Task}]{\setlength{\rightskip}{0pt plus 5cm}Task\+::\+Task (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{title, }
+\item[{Q\+Date\+Time}]{disponibility, }
+\item[{Q\+Date\+Time}]{deadline}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_task_ae40633696ddb87d37de1f0015b840c34}
+
+
+Liste des tache requise pour effectuer la tache courante. 
+
+Constructeur de la classe \hyperlink{class_task}{Task} 
+\begin{DoxyParams}{Parameters}
+{\em Le} & titre de la tache \\
+\hline
+{\em La} & date potentielle de début de la tache \\
+\hline
+{\em La} & deadline de la tache \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 4 of file task.\+cpp.
+
+\hypertarget{class_task_a4413ddd0e29a4588808ee1f8f3367b5c}{}\index{Task@{Task}!Task@{Task}}
+\index{Task@{Task}!Task@{Task}}
+\subsubsection[{Task}]{\setlength{\rightskip}{0pt plus 5cm}Task\+::\+Task (
+\begin{DoxyParamCaption}
+\item[{const {\bf Task} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_task_a4413ddd0e29a4588808ee1f8f3367b5c}
+
+
+Constructeur de recopie la classe \hyperlink{class_task}{Task}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence constante vers la tache à recopier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La tache créée par recopie 
+\end{DoxyReturn}
+\hypertarget{class_task_a2deed8c5e320f3c09a842a2cb944457e}{}\index{Task@{Task}!````~Task@{$\sim$\+Task}}
+\index{````~Task@{$\sim$\+Task}!Task@{Task}}
+\subsubsection[{$\sim$\+Task}]{\setlength{\rightskip}{0pt plus 5cm}Task\+::$\sim$\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_task_a2deed8c5e320f3c09a842a2cb944457e}
+
+
+Destructeur virtuelle de la classe \hyperlink{class_task}{Task}. 
+
+
+
+Definition at line 13 of file task.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_task_a79a7113a964451027787407d988b2586}{}\index{Task@{Task}!add\+Prerequisite@{add\+Prerequisite}}
+\index{add\+Prerequisite@{add\+Prerequisite}!Task@{Task}}
+\subsubsection[{add\+Prerequisite}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+::add\+Prerequisite (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{prerequisite}
+\end{DoxyParamCaption}
+)}\label{class_task_a79a7113a964451027787407d988b2586}
+
+
+Accesseur en écriture, aajoute une tache requise à la réalisation de la tache actuelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & pointeur vers la \hyperlink{class_task}{Task} à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file task.\+cpp.
+
+\hypertarget{class_task_ac6609b3e2460c657f573f944c7970942}{}\index{Task@{Task}!are\+Prerequisite\+Scheduled@{are\+Prerequisite\+Scheduled}}
+\index{are\+Prerequisite\+Scheduled@{are\+Prerequisite\+Scheduled}!Task@{Task}}
+\subsubsection[{are\+Prerequisite\+Scheduled}]{\setlength{\rightskip}{0pt plus 5cm}bool Task\+::are\+Prerequisite\+Scheduled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_task_ac6609b3e2460c657f573f944c7970942}
+
+
+Détermine si les tache requise pour la tache courant sont toutes programmées. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Booléen (true si oui, false sinon) 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file task.\+cpp.
+
+\hypertarget{class_task_a06760406c8dbfc2eae5c39f22164f7a0}{}\index{Task@{Task}!check\+Attaskd\+To@{check\+Attaskd\+To}}
+\index{check\+Attaskd\+To@{check\+Attaskd\+To}!Task@{Task}}
+\subsubsection[{check\+Attaskd\+To}]{\setlength{\rightskip}{0pt plus 5cm}bool Task\+::check\+Attaskd\+To (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{task, }
+\item[{{\bf Task} $\ast$}]{mother\+Task}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_task_a06760406c8dbfc2eae5c39f22164f7a0}
+
+
+Méthode statit vérifiant si la date de disponibilité d\textquotesingle{}une tache parente d\textquotesingle{}une tache est bien antérieure à celle de la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Un} & pointeur sur une tache et un pointeur sur la tache mère à comparer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Booléen (true si oui, false sinon) 
+\end{DoxyReturn}
+
+
+Definition at line 92 of file task.\+cpp.
+
+\hypertarget{class_task_a0182666815bb65cf7e88422eb71dd831}{}\index{Task@{Task}!check\+Prerequisite@{check\+Prerequisite}}
+\index{check\+Prerequisite@{check\+Prerequisite}!Task@{Task}}
+\subsubsection[{check\+Prerequisite}]{\setlength{\rightskip}{0pt plus 5cm}bool Task\+::check\+Prerequisite (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{task, }
+\item[{{\bf Task} $\ast$}]{prerequisite\+Task}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_task_a0182666815bb65cf7e88422eb71dd831}
+
+
+Méthode statit vérifiant si les taches requises sont des dates de début potentiel avant la tache courant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Un} & pointeur sur une tache et un pointeur sur la tache requise à comparer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Booléen (true si oui, false sinon) 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file task.\+cpp.
+
+\hypertarget{class_task_a1634bc579750e601d5ab63fe3a7e8259}{}\index{Task@{Task}!display@{display}}
+\index{display@{display}!Task@{Task}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Task\+::display (
+\begin{DoxyParamCaption}
+\item[{Q\+Standard\+Item $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_task_a1634bc579750e601d5ab63fe3a7e8259}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_unique_task_a9daa05d6e38f45f6bed6434b4423b34e}{Unique\+Task}, and \hyperlink{class_blend_task_a8ffd882e50a272a7b47544dcaf350410}{Blend\+Task}.
+
+\hypertarget{class_task_a876d5bcfaf94fc3e7beda829a9a07bcc}{}\index{Task@{Task}!get\+Deadline@{get\+Deadline}}
+\index{get\+Deadline@{get\+Deadline}!Task@{Task}}
+\subsubsection[{get\+Deadline}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Task\+::get\+Deadline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_task_a876d5bcfaf94fc3e7beda829a9a07bcc}
+
+
+Accesseur en lecture, récupère la deadline de la tache. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un Q\+Date\+Time contenant la deadline 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file task.\+h.
+
+\hypertarget{class_task_acf0a763d8b900e9536cc718b075c6837}{}\index{Task@{Task}!get\+Disponibility@{get\+Disponibility}}
+\index{get\+Disponibility@{get\+Disponibility}!Task@{Task}}
+\subsubsection[{get\+Disponibility}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Task\+::get\+Disponibility (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_task_acf0a763d8b900e9536cc718b075c6837}
+
+
+Accesseur en lecture, récupère la date potentielle de début de la tache. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un Q\+Date\+Time contenant la date 
+\end{DoxyReturn}
+
+
+Definition at line 80 of file task.\+h.
+
+\hypertarget{class_task_a5b31a480993cee5e7468e6fdf46970cc}{}\index{Task@{Task}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!Task@{Task}}
+\subsubsection[{get\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task}$\ast$ Task\+::get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_task_a5b31a480993cee5e7468e6fdf46970cc}
+
+
+Accesseur en lecture, récupère le parent lié à la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un pointeur vers la tache parente 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file task.\+h.
+
+\hypertarget{class_task_ae45552bcf7902c4bb22e108fed9b8c95}{}\index{Task@{Task}!get\+Prerequisite@{get\+Prerequisite}}
+\index{get\+Prerequisite@{get\+Prerequisite}!Task@{Task}}
+\subsubsection[{get\+Prerequisite}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Task}$\ast$$>$\& Task\+::get\+Prerequisite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_task_ae45552bcf7902c4bb22e108fed9b8c95}
+
+
+Accesseur en lecture, récupère le tableau des \hyperlink{class_task}{Task} requise à l\textquotesingle{}accomplissement de la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un tableau Vector de tache 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file task.\+h.
+
+\hypertarget{class_task_a87f84f68d49f57f5f5bce9ec08854f1c}{}\index{Task@{Task}!get\+Status@{get\+Status}}
+\index{get\+Status@{get\+Status}!Task@{Task}}
+\subsubsection[{get\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool Task\+::get\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_task_a87f84f68d49f57f5f5bce9ec08854f1c}
+
+
+Accesseur en lecture, récupère le statut de réalisation de la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un booléen contenant ce statut 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file task.\+h.
+
+\hypertarget{class_task_a8d24d067d2558f8b9cd032670f7be0d4}{}\index{Task@{Task}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!Task@{Task}}
+\subsubsection[{get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Task\+::get\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_task_a8d24d067d2558f8b9cd032670f7be0d4}
+
+
+Accesseur en lecture, récupère le titre de la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un Q\+String contenant le titre 
+\end{DoxyReturn}
+
+
+Definition at line 70 of file task.\+h.
+
+\hypertarget{class_task_ae0af351b77852045fe6107fd81f5cf0e}{}\index{Task@{Task}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Task@{Task}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Task\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Task} \&}]{b}
+\end{DoxyParamCaption}
+) const}\label{class_task_ae0af351b77852045fe6107fd81f5cf0e}
+
+
+Surcharge de l\textquotesingle{}opérateur de comparaison \char`\"{}$<$\char`\"{}, nécessaire à la comparaison de deux taches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence constante vers la tache à comparer avec la tache courante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Booléen (true si oui, false sinon) 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file task.\+cpp.
+
+\hypertarget{class_task_a5ffb0ba25d5fccd6cafea4153df1bee3}{}\index{Task@{Task}!operator=@{operator=}}
+\index{operator=@{operator=}!Task@{Task}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task}\& Task\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Task} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_task_a5ffb0ba25d5fccd6cafea4153df1bee3}
+
+
+Surcharge de l\textquotesingle{}opérateur d\textquotesingle{}affectation \char`\"{}=\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence constante vers la tache à recopier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Une référence vers la tache créée par recopie 
+\end{DoxyReturn}
+\hypertarget{class_task_a55c6d95a49a1e9af2c08ab3f3531b04e}{}\index{Task@{Task}!set\+Deadline@{set\+Deadline}}
+\index{set\+Deadline@{set\+Deadline}!Task@{Task}}
+\subsubsection[{set\+Deadline}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+::set\+Deadline (
+\begin{DoxyParamCaption}
+\item[{Q\+Date\+Time}]{deadline}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_task_a55c6d95a49a1e9af2c08ab3f3531b04e}
+
+
+Accesseur en écriture, affecte une deadline à la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & Q\+Date\+Time contenant la deadline \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file task.\+h.
+
+\hypertarget{class_task_a564bd74ab3dbae672d1cfa41be993032}{}\index{Task@{Task}!set\+Disponibility@{set\+Disponibility}}
+\index{set\+Disponibility@{set\+Disponibility}!Task@{Task}}
+\subsubsection[{set\+Disponibility}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+::set\+Disponibility (
+\begin{DoxyParamCaption}
+\item[{Q\+Date\+Time}]{disponibility}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_task_a564bd74ab3dbae672d1cfa41be993032}
+
+
+Accesseur en écriture, affecte un début potentiel de tache à la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & Q\+Date\+Time contenant la date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file task.\+h.
+
+\hypertarget{class_task_a4c16d78703f1fb014849a7c9c48f33f3}{}\index{Task@{Task}!set\+Parent@{set\+Parent}}
+\index{set\+Parent@{set\+Parent}!Task@{Task}}
+\subsubsection[{set\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+::set\+Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}\label{class_task_a4c16d78703f1fb014849a7c9c48f33f3}
+
+
+Accesseur en écriture, lie la tache actuelle à une tache parente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Un} & pointeur vers la tache parente à lier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file task.\+cpp.
+
+\hypertarget{class_task_a47743716efa458dc1ed004d598ed7184}{}\index{Task@{Task}!set\+Status@{set\+Status}}
+\index{set\+Status@{set\+Status}!Task@{Task}}
+\subsubsection[{set\+Status}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+::set\+Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_task_a47743716efa458dc1ed004d598ed7184}
+
+
+Accesseur en écriture, affecte à la tache le statut \char`\"{}effectué\char`\"{} ou non. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Un} & booléen contenant la valeur de la réalisation de la tache \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file task.\+h.
+
+\hypertarget{class_task_ad459be77e9e2f0df98d65a661fb5581b}{}\index{Task@{Task}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!Task@{Task}}
+\subsubsection[{set\+Title}]{\setlength{\rightskip}{0pt plus 5cm}void Task\+::set\+Title (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_task_ad459be77e9e2f0df98d65a661fb5581b}
+
+
+Accesseur en écriture, affecte un titre à la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & Q\+String contenant le titre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file task.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_task_ad8c46e8e9af82fa4315d77679af7619b}{}\index{Task@{Task}!m\+\_\+deadline@{m\+\_\+deadline}}
+\index{m\+\_\+deadline@{m\+\_\+deadline}!Task@{Task}}
+\subsubsection[{m\+\_\+deadline}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Task\+::m\+\_\+deadline\hspace{0.3cm}{\ttfamily [protected]}}\label{class_task_ad8c46e8e9af82fa4315d77679af7619b}
+
+
+Date à partir de quand on peut potentiellement la commencer. 
+
+
+
+Definition at line 33 of file task.\+h.
+
+\hypertarget{class_task_aede98e97b4be2a2b146eddb761619a6c}{}\index{Task@{Task}!m\+\_\+disponibility@{m\+\_\+disponibility}}
+\index{m\+\_\+disponibility@{m\+\_\+disponibility}!Task@{Task}}
+\subsubsection[{m\+\_\+disponibility}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Task\+::m\+\_\+disponibility\hspace{0.3cm}{\ttfamily [protected]}}\label{class_task_aede98e97b4be2a2b146eddb761619a6c}
+
+
+Titre de la tache. 
+
+
+
+Definition at line 32 of file task.\+h.
+
+\hypertarget{class_task_ab7653d17e9111aab6f5664d68815e5be}{}\index{Task@{Task}!m\+\_\+parent@{m\+\_\+parent}}
+\index{m\+\_\+parent@{m\+\_\+parent}!Task@{Task}}
+\subsubsection[{m\+\_\+parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task}$\ast$ Task\+::m\+\_\+parent\hspace{0.3cm}{\ttfamily [protected]}}\label{class_task_ab7653d17e9111aab6f5664d68815e5be}
+
+
+Statut de la tache \+: true si déjà effectuée, false sinon. 
+
+
+
+Definition at line 35 of file task.\+h.
+
+\hypertarget{class_task_a1d612002385787e4eedd460704d54ded}{}\index{Task@{Task}!m\+\_\+prerequisite@{m\+\_\+prerequisite}}
+\index{m\+\_\+prerequisite@{m\+\_\+prerequisite}!Task@{Task}}
+\subsubsection[{m\+\_\+prerequisite}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Task}$\ast$$>$ Task\+::m\+\_\+prerequisite\hspace{0.3cm}{\ttfamily [protected]}}\label{class_task_a1d612002385787e4eedd460704d54ded}
+
+
+Pointeur vers la tâche parente. 
+
+
+
+Definition at line 36 of file task.\+h.
+
+\hypertarget{class_task_a1036ac363062b06e1abf7b7d6cbcb048}{}\index{Task@{Task}!m\+\_\+status@{m\+\_\+status}}
+\index{m\+\_\+status@{m\+\_\+status}!Task@{Task}}
+\subsubsection[{m\+\_\+status}]{\setlength{\rightskip}{0pt plus 5cm}bool Task\+::m\+\_\+status\hspace{0.3cm}{\ttfamily [protected]}}\label{class_task_a1036ac363062b06e1abf7b7d6cbcb048}
+
+
+Deadline de la tache. 
+
+
+
+Definition at line 34 of file task.\+h.
+
+\hypertarget{class_task_aa9c0fa08a6d4bb6b7390b69ba15baff2}{}\index{Task@{Task}!m\+\_\+title@{m\+\_\+title}}
+\index{m\+\_\+title@{m\+\_\+title}!Task@{Task}}
+\subsubsection[{m\+\_\+title}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Task\+::m\+\_\+title\hspace{0.3cm}{\ttfamily [protected]}}\label{class_task_aa9c0fa08a6d4bb6b7390b69ba15baff2}
+
+
+Definition at line 31 of file task.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{task_8h}{task.\+h}\item 
+\hyperlink{task_8cpp}{task.\+cpp}\end{DoxyCompactItemize}

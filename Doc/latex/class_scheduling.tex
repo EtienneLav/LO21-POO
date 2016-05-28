@@ -1,0 +1,295 @@
+\hypertarget{class_scheduling}{}\section{Scheduling Class Reference}
+\label{class_scheduling}\index{Scheduling@{Scheduling}}
+
+
+Implémentation de la classe \hyperlink{class_scheduling}{Scheduling(\+Programmation)} qui fait le lien entre nos deux modules de programmation.  
+
+
+
+
+{\ttfamily \#include $<$scheduling.\+h$>$}
+
+
+
+Collaboration diagram for Scheduling\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scheduling_a094345e8cc8a35857af874738f3bc499}{$\sim$\+Scheduling} ()
+\begin{DoxyCompactList}\small\item\em Descructeur de la classe \hyperlink{class_scheduling}{Scheduling}. \end{DoxyCompactList}\item 
+Q\+Date\+Time \hyperlink{class_scheduling_a29ff104e6889a0c980c733cfb1aa00f5}{get\+Date\+Time} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture de la date. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_scheduling_ae9f7f01ddecfdfada61f936b7ebea5ae}{get\+Title} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture du titre. \end{DoxyCompactList}\item 
+Q\+Time \hyperlink{class_scheduling_a836aa7328013b6606bda13232e2c34db}{get\+Duration} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture de la durée. \end{DoxyCompactList}\item 
+\hyperlink{class_unique_task}{Unique\+Task} $\ast$ \hyperlink{class_scheduling_a1957dcf1986053f8192843536cf1c173}{get\+Task} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture de la \hyperlink{class_task}{Task} (unitaire) à programmer. \end{DoxyCompactList}\item 
+bool \hyperlink{class_scheduling_af0bb40baeaa5fe2b45f79aa176b00a3a}{operator$<$} (const \hyperlink{class_scheduling}{Scheduling} \&b) const 
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur de comparaison \char`\"{}$<$\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scheduling_a52ca2e0ddd2dc1bf6eb140f9994bd323}{Scheduling} (Q\+Date\+Time date, Q\+Time duration, Q\+String title)
+\begin{DoxyCompactList}\small\item\em Pointeur vers une tache. \end{DoxyCompactList}\item 
+\hyperlink{class_scheduling_a4d07fce3e6ac5e326b28f0f354a32bcb}{Scheduling} (Q\+Date\+Time date, Q\+Time duration, \hyperlink{class_unique_task}{Unique\+Task} $\ast$task)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_scheduling}{Scheduling} pour construire une planification de task (utilisation du m\+\_\+task) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Date\+Time \hyperlink{class_scheduling_a1f0fd5013f53a2e21c8e8fe372bdd995}{m\+\_\+date}
+\item 
+Q\+Time \hyperlink{class_scheduling_a4f68ae25783c736a6056d944bcd9c6c9}{m\+\_\+duration}
+\begin{DoxyCompactList}\small\item\em La date de l\textquotesingle{}activité \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_scheduling_a5c62b4b778b6285407cad0ad9c593cf7}{m\+\_\+title}
+\begin{DoxyCompactList}\small\item\em La durée de l\textquotesingle{}activité \end{DoxyCompactList}\item 
+\hyperlink{class_unique_task}{Unique\+Task} $\ast$ \hyperlink{class_scheduling_a0047ba609aef28fb9c07db1245e14a56}{m\+\_\+task}
+\begin{DoxyCompactList}\small\item\em Le titre de l(\textquotesingle{}activité \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_scheduling_a4bd46ae762a87ca6779dcea78683085d}{Scheduling\+Manager}
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implémentation de la classe \hyperlink{class_scheduling}{Scheduling(\+Programmation)} qui fait le lien entre nos deux modules de programmation. 
+
+Ici sont contenus les informations relatives à une activités. Ainsi qu\textquotesingle{}un pointeur vers une tâche Le pointeur est N\+U\+L\+L.. Alors nous sommes en présence d\textquotesingle{}une activité Sinon il s\textquotesingle{}agit d\textquotesingle{}une planification de tâche 
+
+Definition at line 20 of file scheduling.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_scheduling_a52ca2e0ddd2dc1bf6eb140f9994bd323}{}\index{Scheduling@{Scheduling}!Scheduling@{Scheduling}}
+\index{Scheduling@{Scheduling}!Scheduling@{Scheduling}}
+\subsubsection[{Scheduling}]{\setlength{\rightskip}{0pt plus 5cm}Scheduling\+::\+Scheduling (
+\begin{DoxyParamCaption}
+\item[{Q\+Date\+Time}]{date, }
+\item[{Q\+Time}]{duration, }
+\item[{Q\+String}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_scheduling_a52ca2e0ddd2dc1bf6eb140f9994bd323}
+
+
+Pointeur vers une tache. 
+
+Constructeur de la classe \hyperlink{class_scheduling}{Scheduling} pour construire une activité (pointeur task N\+U\+L\+L) 
+
+Definition at line 3 of file scheduling.\+cpp.
+
+\hypertarget{class_scheduling_a4d07fce3e6ac5e326b28f0f354a32bcb}{}\index{Scheduling@{Scheduling}!Scheduling@{Scheduling}}
+\index{Scheduling@{Scheduling}!Scheduling@{Scheduling}}
+\subsubsection[{Scheduling}]{\setlength{\rightskip}{0pt plus 5cm}Scheduling\+::\+Scheduling (
+\begin{DoxyParamCaption}
+\item[{Q\+Date\+Time}]{date, }
+\item[{Q\+Time}]{duration, }
+\item[{{\bf Unique\+Task} $\ast$}]{task}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_scheduling_a4d07fce3e6ac5e326b28f0f354a32bcb}
+
+
+Constructeur de la classe \hyperlink{class_scheduling}{Scheduling} pour construire une planification de task (utilisation du m\+\_\+task) 
+
+
+
+Definition at line 12 of file scheduling.\+cpp.
+
+\hypertarget{class_scheduling_a094345e8cc8a35857af874738f3bc499}{}\index{Scheduling@{Scheduling}!````~Scheduling@{$\sim$\+Scheduling}}
+\index{````~Scheduling@{$\sim$\+Scheduling}!Scheduling@{Scheduling}}
+\subsubsection[{$\sim$\+Scheduling}]{\setlength{\rightskip}{0pt plus 5cm}Scheduling\+::$\sim$\+Scheduling (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_scheduling_a094345e8cc8a35857af874738f3bc499}
+
+
+Descructeur de la classe \hyperlink{class_scheduling}{Scheduling}. 
+
+
+
+Definition at line 27 of file scheduling.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_scheduling_a29ff104e6889a0c980c733cfb1aa00f5}{}\index{Scheduling@{Scheduling}!get\+Date\+Time@{get\+Date\+Time}}
+\index{get\+Date\+Time@{get\+Date\+Time}!Scheduling@{Scheduling}}
+\subsubsection[{get\+Date\+Time}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Scheduling\+::get\+Date\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_scheduling_a29ff104e6889a0c980c733cfb1aa00f5}
+
+
+Accesseur en lecture de la date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La date de type Q\+Date\+Time 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file scheduling.\+h.
+
+\hypertarget{class_scheduling_a836aa7328013b6606bda13232e2c34db}{}\index{Scheduling@{Scheduling}!get\+Duration@{get\+Duration}}
+\index{get\+Duration@{get\+Duration}!Scheduling@{Scheduling}}
+\subsubsection[{get\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Time Scheduling\+::get\+Duration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_scheduling_a836aa7328013b6606bda13232e2c34db}
+
+
+Accesseur en lecture de la durée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La durée du \hyperlink{class_project}{Project} dans un Q\+Time 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file scheduling.\+h.
+
+\hypertarget{class_scheduling_a1957dcf1986053f8192843536cf1c173}{}\index{Scheduling@{Scheduling}!get\+Task@{get\+Task}}
+\index{get\+Task@{get\+Task}!Scheduling@{Scheduling}}
+\subsubsection[{get\+Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Unique\+Task}$\ast$ Scheduling\+::get\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_scheduling_a1957dcf1986053f8192843536cf1c173}
+
+
+Accesseur en lecture de la \hyperlink{class_task}{Task} (unitaire) à programmer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un pointeur vers une \hyperlink{class_unique_task}{Unique\+Task} 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file scheduling.\+h.
+
+\hypertarget{class_scheduling_ae9f7f01ddecfdfada61f936b7ebea5ae}{}\index{Scheduling@{Scheduling}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!Scheduling@{Scheduling}}
+\subsubsection[{get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Scheduling\+::get\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_scheduling_ae9f7f01ddecfdfada61f936b7ebea5ae}
+
+
+Accesseur en lecture du titre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le titre du \hyperlink{class_project}{Project} dans une Q\+String 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file scheduling.\+h.
+
+\hypertarget{class_scheduling_af0bb40baeaa5fe2b45f79aa176b00a3a}{}\index{Scheduling@{Scheduling}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Scheduling@{Scheduling}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Scheduling\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Scheduling} \&}]{b}
+\end{DoxyParamCaption}
+) const}\label{class_scheduling_af0bb40baeaa5fe2b45f79aa176b00a3a}
+
+
+Surcharge de l\textquotesingle{}opérateur de comparaison \char`\"{}$<$\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence sur une programmation pour comparer celle grâce à laquelle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le titre du \hyperlink{class_project}{Project} dans une Q\+String 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file scheduling.\+cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_scheduling_a4bd46ae762a87ca6779dcea78683085d}{}\index{Scheduling@{Scheduling}!Scheduling\+Manager@{Scheduling\+Manager}}
+\index{Scheduling\+Manager@{Scheduling\+Manager}!Scheduling@{Scheduling}}
+\subsubsection[{Scheduling\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Scheduling\+Manager}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_scheduling_a4bd46ae762a87ca6779dcea78683085d}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+
+Definition at line 35 of file scheduling.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_scheduling_a1f0fd5013f53a2e21c8e8fe372bdd995}{}\index{Scheduling@{Scheduling}!m\+\_\+date@{m\+\_\+date}}
+\index{m\+\_\+date@{m\+\_\+date}!Scheduling@{Scheduling}}
+\subsubsection[{m\+\_\+date}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Scheduling\+::m\+\_\+date\hspace{0.3cm}{\ttfamily [protected]}}\label{class_scheduling_a1f0fd5013f53a2e21c8e8fe372bdd995}
+
+
+Definition at line 23 of file scheduling.\+h.
+
+\hypertarget{class_scheduling_a4f68ae25783c736a6056d944bcd9c6c9}{}\index{Scheduling@{Scheduling}!m\+\_\+duration@{m\+\_\+duration}}
+\index{m\+\_\+duration@{m\+\_\+duration}!Scheduling@{Scheduling}}
+\subsubsection[{m\+\_\+duration}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Time Scheduling\+::m\+\_\+duration\hspace{0.3cm}{\ttfamily [protected]}}\label{class_scheduling_a4f68ae25783c736a6056d944bcd9c6c9}
+
+
+La date de l\textquotesingle{}activité 
+
+
+
+Definition at line 24 of file scheduling.\+h.
+
+\hypertarget{class_scheduling_a0047ba609aef28fb9c07db1245e14a56}{}\index{Scheduling@{Scheduling}!m\+\_\+task@{m\+\_\+task}}
+\index{m\+\_\+task@{m\+\_\+task}!Scheduling@{Scheduling}}
+\subsubsection[{m\+\_\+task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Unique\+Task}$\ast$ Scheduling\+::m\+\_\+task\hspace{0.3cm}{\ttfamily [protected]}}\label{class_scheduling_a0047ba609aef28fb9c07db1245e14a56}
+
+
+Le titre de l(\textquotesingle{}activité 
+
+
+
+Definition at line 26 of file scheduling.\+h.
+
+\hypertarget{class_scheduling_a5c62b4b778b6285407cad0ad9c593cf7}{}\index{Scheduling@{Scheduling}!m\+\_\+title@{m\+\_\+title}}
+\index{m\+\_\+title@{m\+\_\+title}!Scheduling@{Scheduling}}
+\subsubsection[{m\+\_\+title}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Scheduling\+::m\+\_\+title\hspace{0.3cm}{\ttfamily [protected]}}\label{class_scheduling_a5c62b4b778b6285407cad0ad9c593cf7}
+
+
+La durée de l\textquotesingle{}activité 
+
+
+
+Definition at line 25 of file scheduling.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{scheduling_8h}{scheduling.\+h}\item 
+\hyperlink{scheduling_8cpp}{scheduling.\+cpp}\end{DoxyCompactItemize}

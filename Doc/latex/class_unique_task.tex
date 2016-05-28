@@ -1,0 +1,277 @@
+\hypertarget{class_unique_task}{}\section{Unique\+Task Class Reference}
+\label{class_unique_task}\index{Unique\+Task@{Unique\+Task}}
+
+
+Une \hyperlink{class_unique_task}{Unique\+Task} est une tache unitaire, l\textquotesingle{}atome de base de notre conception. Tache unitaire héritant de la classe \hyperlink{class_task}{Task}.  
+
+
+
+
+{\ttfamily \#include $<$uniquetask.\+h$>$}
+
+
+
+Inheritance diagram for Unique\+Task\+:
+% FIG 0
+
+
+Collaboration diagram for Unique\+Task\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_unique_task_a84f23c7bc2027becd01e6542c25bc399}{Unique\+Task} (Q\+String title, Q\+Date\+Time disponibility, Q\+Date\+Time deadline, Q\+Time duration, bool preemptable=false)
+\begin{DoxyCompactList}\small\item\em Son statut préempté ou non. \end{DoxyCompactList}\item 
+Q\+Time \hyperlink{class_unique_task_a91ace1ffd87ac8f1a0508bf4ad52ead2}{get\+Duree} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupère la durée de la tache courante. \end{DoxyCompactList}\item 
+bool \hyperlink{class_unique_task_ac555928dbf9edfcbe0b646bbc94a1029}{get\+Preemptability} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupère le caractère préemptable de la tache courante. \end{DoxyCompactList}\item 
+void \hyperlink{class_unique_task_a6c576a3ed9a589e622ccb63c64e0b637}{set\+Duree} (Q\+Time duration)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, affecte une durée à la tache courante. \end{DoxyCompactList}\item 
+void \hyperlink{class_unique_task_af5a23e5030a8f345e4079abf7a01486e}{set\+Preemptability} (bool choice)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, affecte un booléen au caractère préemptable d\textquotesingle{}une tache. \end{DoxyCompactList}\item 
+void \hyperlink{class_unique_task_a9daa05d6e38f45f6bed6434b4423b34e}{display} (Q\+Standard\+Item $\ast$parent)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+list$<$ \hyperlink{class_task}{Task} $\ast$ $>$ \hyperlink{class_unique_task_a67587bbb2a9522443c86639e1416e73e}{get\+All\+Unique\+Prerequisite} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupère la liste des tache unitaire requise à la tache courante. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_unique_task_a69b07051dcfbf6d2225ae9938fc5087b}{$\sim$\+Unique\+Task} ()
+\begin{DoxyCompactList}\small\item\em Le destructeur de la classe \hyperlink{class_unique_task}{Unique\+Task} en virtuel (pour éventuel evolution future) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Time \hyperlink{class_unique_task_a8d7fa1559a22ca019cc353354f5e7094}{m\+\_\+duration}
+\item 
+bool \hyperlink{class_unique_task_a93fcfbd1a38642296ca7ac7919129bf4}{m\+\_\+preemptable}
+\begin{DoxyCompactList}\small\item\em La durée de la tache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Une \hyperlink{class_unique_task}{Unique\+Task} est une tache unitaire, l\textquotesingle{}atome de base de notre conception. Tache unitaire héritant de la classe \hyperlink{class_task}{Task}. 
+
+Une Tache unitaire est une spécialisation de tache 
+
+Definition at line 19 of file uniquetask.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_unique_task_a84f23c7bc2027becd01e6542c25bc399}{}\index{Unique\+Task@{Unique\+Task}!Unique\+Task@{Unique\+Task}}
+\index{Unique\+Task@{Unique\+Task}!Unique\+Task@{Unique\+Task}}
+\subsubsection[{Unique\+Task}]{\setlength{\rightskip}{0pt plus 5cm}Unique\+Task\+::\+Unique\+Task (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{title, }
+\item[{Q\+Date\+Time}]{disponibility, }
+\item[{Q\+Date\+Time}]{deadline, }
+\item[{Q\+Time}]{duration, }
+\item[{bool}]{preemptable = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_unique_task_a84f23c7bc2027becd01e6542c25bc399}
+
+
+Son statut préempté ou non. 
+
+Constructeur de la classe \hyperlink{class_unique_task}{Unique\+Task} 
+\begin{DoxyParams}{Parameters}
+{\em title} & \+: titre de la tache unitaire que l\textquotesingle{}on crée \\
+\hline
+{\em disponibility} & \+: date potentiel de début de la tache unitaire créée \\
+\hline
+{\em deadline} & \+: date de fin de la tache unitaire que l\textquotesingle{}on crée \\
+\hline
+{\em durée} & \+: durée de la tache unitaire que l\textquotesingle{}on crée \\
+\hline
+{\em preemptable} & \+: caractère a être préemptée de la tache crée \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 4 of file uniquetask.\+cpp.
+
+\hypertarget{class_unique_task_a69b07051dcfbf6d2225ae9938fc5087b}{}\index{Unique\+Task@{Unique\+Task}!````~Unique\+Task@{$\sim$\+Unique\+Task}}
+\index{````~Unique\+Task@{$\sim$\+Unique\+Task}!Unique\+Task@{Unique\+Task}}
+\subsubsection[{$\sim$\+Unique\+Task}]{\setlength{\rightskip}{0pt plus 5cm}Unique\+Task\+::$\sim$\+Unique\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_unique_task_a69b07051dcfbf6d2225ae9938fc5087b}
+
+
+Le destructeur de la classe \hyperlink{class_unique_task}{Unique\+Task} en virtuel (pour éventuel evolution future) 
+
+
+
+Definition at line 13 of file uniquetask.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_unique_task_a9daa05d6e38f45f6bed6434b4423b34e}{}\index{Unique\+Task@{Unique\+Task}!display@{display}}
+\index{display@{display}!Unique\+Task@{Unique\+Task}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Unique\+Task\+::display (
+\begin{DoxyParamCaption}
+\item[{Q\+Standard\+Item $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_unique_task_a9daa05d6e38f45f6bed6434b4423b34e}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_task_a1634bc579750e601d5ab63fe3a7e8259}{Task}.
+
+
+
+Definition at line 21 of file uniquetask.\+cpp.
+
+\hypertarget{class_unique_task_a67587bbb2a9522443c86639e1416e73e}{}\index{Unique\+Task@{Unique\+Task}!get\+All\+Unique\+Prerequisite@{get\+All\+Unique\+Prerequisite}}
+\index{get\+All\+Unique\+Prerequisite@{get\+All\+Unique\+Prerequisite}!Unique\+Task@{Unique\+Task}}
+\subsubsection[{get\+All\+Unique\+Prerequisite}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf Task} $\ast$ $>$ Unique\+Task\+::get\+All\+Unique\+Prerequisite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_unique_task_a67587bbb2a9522443c86639e1416e73e}
+
+
+Accesseur en lecture, récupère la liste des tache unitaire requise à la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Une liste contenant les taches requises à la réalisation del a tache unitaire courante 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file uniquetask.\+cpp.
+
+\hypertarget{class_unique_task_a91ace1ffd87ac8f1a0508bf4ad52ead2}{}\index{Unique\+Task@{Unique\+Task}!get\+Duree@{get\+Duree}}
+\index{get\+Duree@{get\+Duree}!Unique\+Task@{Unique\+Task}}
+\subsubsection[{get\+Duree}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Time Unique\+Task\+::get\+Duree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_unique_task_a91ace1ffd87ac8f1a0508bf4ad52ead2}
+
+
+Accesseur en lecture, récupère la durée de la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un Q\+Time contenant la durée de la tache courante 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file uniquetask.\+h.
+
+\hypertarget{class_unique_task_ac555928dbf9edfcbe0b646bbc94a1029}{}\index{Unique\+Task@{Unique\+Task}!get\+Preemptability@{get\+Preemptability}}
+\index{get\+Preemptability@{get\+Preemptability}!Unique\+Task@{Unique\+Task}}
+\subsubsection[{get\+Preemptability}]{\setlength{\rightskip}{0pt plus 5cm}bool Unique\+Task\+::get\+Preemptability (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_unique_task_ac555928dbf9edfcbe0b646bbc94a1029}
+
+
+Accesseur en lecture, récupère le caractère préemptable de la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un booléen contenant ce statut 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file uniquetask.\+h.
+
+\hypertarget{class_unique_task_a6c576a3ed9a589e622ccb63c64e0b637}{}\index{Unique\+Task@{Unique\+Task}!set\+Duree@{set\+Duree}}
+\index{set\+Duree@{set\+Duree}!Unique\+Task@{Unique\+Task}}
+\subsubsection[{set\+Duree}]{\setlength{\rightskip}{0pt plus 5cm}void Unique\+Task\+::set\+Duree (
+\begin{DoxyParamCaption}
+\item[{Q\+Time}]{duration}
+\end{DoxyParamCaption}
+)}\label{class_unique_task_a6c576a3ed9a589e622ccb63c64e0b637}
+
+
+Accesseur en écriture, affecte une durée à la tache courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Un} & Q\+Time contenant la durée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file uniquetask.\+cpp.
+
+\hypertarget{class_unique_task_af5a23e5030a8f345e4079abf7a01486e}{}\index{Unique\+Task@{Unique\+Task}!set\+Preemptability@{set\+Preemptability}}
+\index{set\+Preemptability@{set\+Preemptability}!Unique\+Task@{Unique\+Task}}
+\subsubsection[{set\+Preemptability}]{\setlength{\rightskip}{0pt plus 5cm}void Unique\+Task\+::set\+Preemptability (
+\begin{DoxyParamCaption}
+\item[{bool}]{choice}
+\end{DoxyParamCaption}
+)}\label{class_unique_task_af5a23e5030a8f345e4079abf7a01486e}
+
+
+Accesseur en écriture, affecte un booléen au caractère préemptable d\textquotesingle{}une tache. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Un} & booléen contenant le statut \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file uniquetask.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_unique_task_a8d7fa1559a22ca019cc353354f5e7094}{}\index{Unique\+Task@{Unique\+Task}!m\+\_\+duration@{m\+\_\+duration}}
+\index{m\+\_\+duration@{m\+\_\+duration}!Unique\+Task@{Unique\+Task}}
+\subsubsection[{m\+\_\+duration}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Time Unique\+Task\+::m\+\_\+duration\hspace{0.3cm}{\ttfamily [protected]}}\label{class_unique_task_a8d7fa1559a22ca019cc353354f5e7094}
+
+
+Definition at line 23 of file uniquetask.\+h.
+
+\hypertarget{class_unique_task_a93fcfbd1a38642296ca7ac7919129bf4}{}\index{Unique\+Task@{Unique\+Task}!m\+\_\+preemptable@{m\+\_\+preemptable}}
+\index{m\+\_\+preemptable@{m\+\_\+preemptable}!Unique\+Task@{Unique\+Task}}
+\subsubsection[{m\+\_\+preemptable}]{\setlength{\rightskip}{0pt plus 5cm}bool Unique\+Task\+::m\+\_\+preemptable\hspace{0.3cm}{\ttfamily [protected]}}\label{class_unique_task_a93fcfbd1a38642296ca7ac7919129bf4}
+
+
+La durée de la tache. 
+
+
+
+Definition at line 24 of file uniquetask.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{uniquetask_8h}{uniquetask.\+h}\item 
+\hyperlink{uniquetask_8cpp}{uniquetask.\+cpp}\end{DoxyCompactItemize}

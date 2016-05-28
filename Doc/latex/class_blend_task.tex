@@ -1,0 +1,233 @@
+\hypertarget{class_blend_task}{}\section{Blend\+Task Class Reference}
+\label{class_blend_task}\index{Blend\+Task@{Blend\+Task}}
+
+
+C\textquotesingle{}est une spécialisation d\textquotesingle{}une tache.  
+
+
+
+
+{\ttfamily \#include $<$blendtask.\+h$>$}
+
+
+
+Inheritance diagram for Blend\+Task\+:
+% FIG 0
+
+
+Collaboration diagram for Blend\+Task\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_blend_task_a61bf72da25e75729b4862d799a07a431}{Blend\+Task} (Q\+String title, Q\+Date\+Time disponibility, Q\+Date\+Time deadline)
+\begin{DoxyCompactList}\small\item\em Vecteur de taches représentant les taches composants cette tache composite. \end{DoxyCompactList}\item 
+void \hyperlink{class_blend_task_a3040fd67a2ce24fb0f35f2b3c67b04bd}{add\+Element} (\hyperlink{class_task}{Task} $\ast$element)
+\begin{DoxyCompactList}\small\item\em Ajout d\textquotesingle{}une tache dans la tache composite. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_task}{Task} $\ast$ $>$ \& \hyperlink{class_blend_task_ae93f227e61d7f371dcb0e1b08f7873cb}{get\+Element} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupération d\textquotesingle{}un élément. \end{DoxyCompactList}\item 
+void \hyperlink{class_blend_task_a8ffd882e50a272a7b47544dcaf350410}{display} (Q\+Standard\+Item $\ast$parent)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+list$<$ \hyperlink{class_task}{Task} $\ast$ $>$ \hyperlink{class_blend_task_acab9d3efa1c415e50788b2bf763358c7}{get\+All\+Unique\+Prerequisite} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture qui récupére toutes les taches (sous forme de liste) qui. \end{DoxyCompactList}\item 
+list$<$ \hyperlink{class_task}{Task} $\ast$ $>$ \hyperlink{class_blend_task_a0495a8681c833baea0440e6bc1afd60d}{get\+All\+Unique\+Sons} ()
+\begin{DoxyCompactList}\small\item\em Récupérer toutes les taches composants la tache composite et qui sont des taches unitaires. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_blend_task_a65b65d27cbfd5a0013bda2012e22b132}{$\sim$\+Blend\+Task} ()
+\begin{DoxyCompactList}\small\item\em Desctructeur de la classe \hyperlink{class_blend_task}{Blend\+Task}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{class_task}{Task} $\ast$ $>$ \hyperlink{class_blend_task_abc2ad39e5a8315432427ced2e87c8157}{m\+\_\+element}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+C\textquotesingle{}est une spécialisation d\textquotesingle{}une tache. 
+
+\textbackslash{}brief Une \hyperlink{class_blend_task}{Blend\+Task} est une \hyperlink{class_task}{Task} qui est composée d\textquotesingle{}un ensemble de \hyperlink{class_task}{Task} (Agrégation). Cette classe hérite de la classe \hyperlink{class_task}{Task} 
+
+Definition at line 18 of file blendtask.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_blend_task_a61bf72da25e75729b4862d799a07a431}{}\index{Blend\+Task@{Blend\+Task}!Blend\+Task@{Blend\+Task}}
+\index{Blend\+Task@{Blend\+Task}!Blend\+Task@{Blend\+Task}}
+\subsubsection[{Blend\+Task}]{\setlength{\rightskip}{0pt plus 5cm}Blend\+Task\+::\+Blend\+Task (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{title, }
+\item[{Q\+Date\+Time}]{disponibility, }
+\item[{Q\+Date\+Time}]{deadline}
+\end{DoxyParamCaption}
+)}\label{class_blend_task_a61bf72da25e75729b4862d799a07a431}
+
+
+Vecteur de taches représentant les taches composants cette tache composite. 
+
+Constructeur de la classe \hyperlink{class_blend_task}{Blend\+Task} 
+\begin{DoxyParams}{Parameters}
+{\em title} & \+: titre de la tache composite que l\textquotesingle{}on crée \\
+\hline
+{\em disponibility} & \+: date potentiel de début de la tache composite que l\textquotesingle{}on crée \\
+\hline
+{\em deadline} & \+: date de fin de la tache composite que l\textquotesingle{}on crée \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3 of file blendtask.\+cpp.
+
+\hypertarget{class_blend_task_a65b65d27cbfd5a0013bda2012e22b132}{}\index{Blend\+Task@{Blend\+Task}!````~Blend\+Task@{$\sim$\+Blend\+Task}}
+\index{````~Blend\+Task@{$\sim$\+Blend\+Task}!Blend\+Task@{Blend\+Task}}
+\subsubsection[{$\sim$\+Blend\+Task}]{\setlength{\rightskip}{0pt plus 5cm}Blend\+Task\+::$\sim$\+Blend\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_blend_task_a65b65d27cbfd5a0013bda2012e22b132}
+
+
+Desctructeur de la classe \hyperlink{class_blend_task}{Blend\+Task}. 
+
+
+
+Definition at line 9 of file blendtask.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_blend_task_a3040fd67a2ce24fb0f35f2b3c67b04bd}{}\index{Blend\+Task@{Blend\+Task}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!Blend\+Task@{Blend\+Task}}
+\subsubsection[{add\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void Blend\+Task\+::add\+Element (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{element}
+\end{DoxyParamCaption}
+)}\label{class_blend_task_a3040fd67a2ce24fb0f35f2b3c67b04bd}
+
+
+Ajout d\textquotesingle{}une tache dans la tache composite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & pointeur sur l\textquotesingle{}élément à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file blendtask.\+cpp.
+
+\hypertarget{class_blend_task_a8ffd882e50a272a7b47544dcaf350410}{}\index{Blend\+Task@{Blend\+Task}!display@{display}}
+\index{display@{display}!Blend\+Task@{Blend\+Task}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Blend\+Task\+::display (
+\begin{DoxyParamCaption}
+\item[{Q\+Standard\+Item $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_blend_task_a8ffd882e50a272a7b47544dcaf350410}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & pointeur sur le parent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_task_a1634bc579750e601d5ab63fe3a7e8259}{Task}.
+
+
+
+Definition at line 32 of file blendtask.\+cpp.
+
+\hypertarget{class_blend_task_acab9d3efa1c415e50788b2bf763358c7}{}\index{Blend\+Task@{Blend\+Task}!get\+All\+Unique\+Prerequisite@{get\+All\+Unique\+Prerequisite}}
+\index{get\+All\+Unique\+Prerequisite@{get\+All\+Unique\+Prerequisite}!Blend\+Task@{Blend\+Task}}
+\subsubsection[{get\+All\+Unique\+Prerequisite}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf Task} $\ast$ $>$ Blend\+Task\+::get\+All\+Unique\+Prerequisite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_blend_task_acab9d3efa1c415e50788b2bf763358c7}
+
+
+Accesseur en lecture qui récupére toutes les taches (sous forme de liste) qui. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & pointeur sur le pare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+liste de taches 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file blendtask.\+cpp.
+
+\hypertarget{class_blend_task_a0495a8681c833baea0440e6bc1afd60d}{}\index{Blend\+Task@{Blend\+Task}!get\+All\+Unique\+Sons@{get\+All\+Unique\+Sons}}
+\index{get\+All\+Unique\+Sons@{get\+All\+Unique\+Sons}!Blend\+Task@{Blend\+Task}}
+\subsubsection[{get\+All\+Unique\+Sons}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf Task} $\ast$ $>$ Blend\+Task\+::get\+All\+Unique\+Sons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_blend_task_a0495a8681c833baea0440e6bc1afd60d}
+
+
+Récupérer toutes les taches composants la tache composite et qui sont des taches unitaires. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+liste de taches 
+\end{DoxyReturn}
+
+
+Definition at line 72 of file blendtask.\+cpp.
+
+\hypertarget{class_blend_task_ae93f227e61d7f371dcb0e1b08f7873cb}{}\index{Blend\+Task@{Blend\+Task}!get\+Element@{get\+Element}}
+\index{get\+Element@{get\+Element}!Blend\+Task@{Blend\+Task}}
+\subsubsection[{get\+Element}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Task} $\ast$$>$\& Blend\+Task\+::get\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_blend_task_ae93f227e61d7f371dcb0e1b08f7873cb}
+
+
+Accesseur en lecture, récupération d\textquotesingle{}un élément. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+Task $\ast$$>$\& 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file blendtask.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_blend_task_abc2ad39e5a8315432427ced2e87c8157}{}\index{Blend\+Task@{Blend\+Task}!m\+\_\+element@{m\+\_\+element}}
+\index{m\+\_\+element@{m\+\_\+element}!Blend\+Task@{Blend\+Task}}
+\subsubsection[{m\+\_\+element}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Task} $\ast$$>$ Blend\+Task\+::m\+\_\+element\hspace{0.3cm}{\ttfamily [protected]}}\label{class_blend_task_abc2ad39e5a8315432427ced2e87c8157}
+
+
+Definition at line 22 of file blendtask.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{blendtask_8h}{blendtask.\+h}\item 
+\hyperlink{blendtask_8cpp}{blendtask.\+cpp}\end{DoxyCompactItemize}

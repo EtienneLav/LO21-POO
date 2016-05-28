@@ -1,0 +1,150 @@
+\hypertarget{class_project_manager}{}\section{Project\+Manager Class Reference}
+\label{class_project_manager}\index{Project\+Manager@{Project\+Manager}}
+
+
+Implémentation de la classe \hyperlink{class_project}{Project} qui contient des taches et sera gérée par le \hyperlink{class_project_manager}{Project\+Manager}.  
+
+
+
+
+{\ttfamily \#include $<$projectmanager.\+h$>$}
+
+
+
+Inheritance diagram for Project\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for Project\+Manager\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_project_manager_aec73d7c6f6862c50d0a276bbe5a95833}{add\+Element} (Q\+String title, Q\+Date\+Time disponibility, Q\+Date\+Time deadline)
+\begin{DoxyCompactList}\small\item\em La méthode static permettant de libérer l\textquotesingle{}unique instance de type \hyperlink{class_project_manager}{Project\+Manager}. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_manager_aeeb5a2052171bfc03949acfa6a6dd3e0}{display} (Q\+Standard\+Item\+Model $\ast$model)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_project_manager}{Project\+Manager} \& \hyperlink{class_project_manager_a902ef9b3faae48a7445a85d05ba57ad7}{get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Le Handler Static permettant de gérer le \hyperlink{class_project_manager}{Project\+Manager} unique. \end{DoxyCompactList}\item 
+static void \hyperlink{class_project_manager_af9dda837b0c96ec9a72abeec380cdbff}{free\+Instance} ()
+\begin{DoxyCompactList}\small\item\em La méthode static permettant de libérer l\textquotesingle{}unique instance de type \hyperlink{class_project_manager}{Project\+Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implémentation de la classe \hyperlink{class_project}{Project} qui contient des taches et sera gérée par le \hyperlink{class_project_manager}{Project\+Manager}. 
+
+Classe qui gère les projet, implémentée avec le Design Pattern Singleton. 
+
+Definition at line 23 of file projectmanager.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_project_manager_aec73d7c6f6862c50d0a276bbe5a95833}{}\index{Project\+Manager@{Project\+Manager}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!Project\+Manager@{Project\+Manager}}
+\subsubsection[{add\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+Manager\+::add\+Element (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{title, }
+\item[{Q\+Date\+Time}]{disponibility, }
+\item[{Q\+Date\+Time}]{deadline}
+\end{DoxyParamCaption}
+)}\label{class_project_manager_aec73d7c6f6862c50d0a276bbe5a95833}
+
+
+La méthode static permettant de libérer l\textquotesingle{}unique instance de type \hyperlink{class_project_manager}{Project\+Manager}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & titre du projet à ajouter au Manager de projets \\
+\hline
+{\em La} & date potentielle de départ du projet à ajouter au manager de projets \\
+\hline
+{\em La} & deadline du projet à ajouter au manager de projets \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file projectmanager.\+cpp.
+
+\hypertarget{class_project_manager_aeeb5a2052171bfc03949acfa6a6dd3e0}{}\index{Project\+Manager@{Project\+Manager}!display@{display}}
+\index{display@{display}!Project\+Manager@{Project\+Manager}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+Manager\+::display (
+\begin{DoxyParamCaption}
+\item[{Q\+Standard\+Item\+Model $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\label{class_project_manager_aeeb5a2052171bfc03949acfa6a6dd3e0}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file projectmanager.\+cpp.
+
+\hypertarget{class_project_manager_af9dda837b0c96ec9a72abeec380cdbff}{}\index{Project\+Manager@{Project\+Manager}!free\+Instance@{free\+Instance}}
+\index{free\+Instance@{free\+Instance}!Project\+Manager@{Project\+Manager}}
+\subsubsection[{free\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+Manager\+::free\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_project_manager_af9dda837b0c96ec9a72abeec380cdbff}
+
+
+La méthode static permettant de libérer l\textquotesingle{}unique instance de type \hyperlink{class_project_manager}{Project\+Manager}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file projectmanager.\+cpp.
+
+\hypertarget{class_project_manager_a902ef9b3faae48a7445a85d05ba57ad7}{}\index{Project\+Manager@{Project\+Manager}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Project\+Manager@{Project\+Manager}}
+\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Project\+Manager} \& Project\+Manager\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_project_manager_a902ef9b3faae48a7445a85d05ba57ad7}
+
+
+Le Handler Static permettant de gérer le \hyperlink{class_project_manager}{Project\+Manager} unique. 
+
+La méthode static permettant de renvoyer l\textquotesingle{}instance créée du \hyperlink{class_project_manager}{Project\+Manager} 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Une référence sur le \hyperlink{class_project_manager}{Project\+Manager} instancié de manière unique 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file projectmanager.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{projectmanager_8h}{projectmanager.\+h}\item 
+\hyperlink{projectmanager_8cpp}{projectmanager.\+cpp}\end{DoxyCompactItemize}

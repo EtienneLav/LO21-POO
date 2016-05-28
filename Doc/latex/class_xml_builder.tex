@@ -1,0 +1,191 @@
+\hypertarget{class_xml_builder}{}\section{Xml\+Builder Class Reference}
+\label{class_xml_builder}\index{Xml\+Builder@{Xml\+Builder}}
+
+
+Classe \hyperlink{class_xml_builder}{Xml\+Builder} héritant de la classe \hyperlink{class_abstract_builder}{Abstract\+Builder} publiquement, servant à l\textquotesingle{}import/export X\+M\+L.  
+
+
+
+
+{\ttfamily \#include $<$xmlbuilder.\+h$>$}
+
+
+
+Inheritance diagram for Xml\+Builder\+:
+% FIG 0
+
+
+Collaboration diagram for Xml\+Builder\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_xml_builder_aa60c67d6dfe1cf6262ef1f1e93cddbd2}{Xml\+Builder} (Q\+String file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_xml_builder}{Xml\+Builder}. \end{DoxyCompactList}\item 
+\hyperlink{class_xml_builder_a56d4fcf0271d8c7fe760528f5f41f19d}{$\sim$\+Xml\+Builder} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \hyperlink{class_xml_builder}{Xml\+Builder}. \end{DoxyCompactList}\item 
+void \hyperlink{class_xml_builder_a002af47c0db8797c0986cb659c8567c1}{write\+Output} (std\+::list$<$ \hyperlink{class_project}{Project} $\ast$ $>$ \&project\+\_\+list, std\+::list$<$ \hyperlink{class_scheduling}{Scheduling} $\ast$ $>$ \&scheduling\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Export (écriture) dans le fichier X\+M\+L. \end{DoxyCompactList}\item 
+void \hyperlink{class_xml_builder_aba1e1fe5161a5a4b4578eb95013accd8}{save\+Task} (Q\+Xml\+Stream\+Writer \&stream, \hyperlink{class_task}{Task} $\ast$task)
+\begin{DoxyCompactList}\small\item\em Accesseur de la validation du choix. \end{DoxyCompactList}\item 
+void \hyperlink{class_xml_builder_ac42cb9c7614a3414609cdcaf2d0cb858}{read\+Input} (\hyperlink{class_project_manager}{Project\+Manager} \&project\+Manager, \hyperlink{class_scheduling_manager}{Scheduling\+Manager} \&scheduling\+Manager)
+\begin{DoxyCompactList}\small\item\em Import(lecteur) dans le fichier X\+M\+L. \end{DoxyCompactList}\item 
+void \hyperlink{class_xml_builder_ade2ff6ec6f5820ceedd7fbea1dfbf473}{read\+Task} (Q\+Dom\+Node task\+\_\+node, \hyperlink{class_blend_task}{Blend\+Task} $\ast$task\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Lecteur des taches du fichier X\+M\+L. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe \hyperlink{class_xml_builder}{Xml\+Builder} héritant de la classe \hyperlink{class_abstract_builder}{Abstract\+Builder} publiquement, servant à l\textquotesingle{}import/export X\+M\+L. 
+
+Definition at line 18 of file xmlbuilder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_xml_builder_aa60c67d6dfe1cf6262ef1f1e93cddbd2}{}\index{Xml\+Builder@{Xml\+Builder}!Xml\+Builder@{Xml\+Builder}}
+\index{Xml\+Builder@{Xml\+Builder}!Xml\+Builder@{Xml\+Builder}}
+\subsubsection[{Xml\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}Xml\+Builder\+::\+Xml\+Builder (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{file\+\_\+path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_xml_builder_aa60c67d6dfe1cf6262ef1f1e93cddbd2}
+
+
+Constructeur de la classe \hyperlink{class_xml_builder}{Xml\+Builder}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & chemin de du fichier X\+M\+L \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file xmlbuilder.\+h.
+
+\hypertarget{class_xml_builder_a56d4fcf0271d8c7fe760528f5f41f19d}{}\index{Xml\+Builder@{Xml\+Builder}!````~Xml\+Builder@{$\sim$\+Xml\+Builder}}
+\index{````~Xml\+Builder@{$\sim$\+Xml\+Builder}!Xml\+Builder@{Xml\+Builder}}
+\subsubsection[{$\sim$\+Xml\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}Xml\+Builder\+::$\sim$\+Xml\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_xml_builder_a56d4fcf0271d8c7fe760528f5f41f19d}
+
+
+Destructeur de la classe \hyperlink{class_xml_builder}{Xml\+Builder}. 
+
+
+
+Definition at line 3 of file xmlbuilder.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_xml_builder_ac42cb9c7614a3414609cdcaf2d0cb858}{}\index{Xml\+Builder@{Xml\+Builder}!read\+Input@{read\+Input}}
+\index{read\+Input@{read\+Input}!Xml\+Builder@{Xml\+Builder}}
+\subsubsection[{read\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void Xml\+Builder\+::read\+Input (
+\begin{DoxyParamCaption}
+\item[{{\bf Project\+Manager} \&}]{project\+Manager, }
+\item[{{\bf Scheduling\+Manager} \&}]{scheduling\+Manager}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_xml_builder_ac42cb9c7614a3414609cdcaf2d0cb858}
+
+
+Import(lecteur) dans le fichier X\+M\+L. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence vers le \hyperlink{class_project_manager}{Project\+Manager} du fichier à importer \\
+\hline
+{\em Une} & référence vers le \hyperlink{class_scheduling_manager}{Scheduling\+Manager} du fichier à importer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_abstract_builder_a75176f834f24994e541151dc4fb130ec}{Abstract\+Builder}.
+
+
+
+Definition at line 120 of file xmlbuilder.\+cpp.
+
+\hypertarget{class_xml_builder_ade2ff6ec6f5820ceedd7fbea1dfbf473}{}\index{Xml\+Builder@{Xml\+Builder}!read\+Task@{read\+Task}}
+\index{read\+Task@{read\+Task}!Xml\+Builder@{Xml\+Builder}}
+\subsubsection[{read\+Task}]{\setlength{\rightskip}{0pt plus 5cm}void Xml\+Builder\+::read\+Task (
+\begin{DoxyParamCaption}
+\item[{Q\+Dom\+Node}]{task\+\_\+node, }
+\item[{{\bf Blend\+Task} $\ast$}]{task\+\_\+ptr}
+\end{DoxyParamCaption}
+)}\label{class_xml_builder_ade2ff6ec6f5820ceedd7fbea1dfbf473}
+
+
+Lecteur des taches du fichier X\+M\+L. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_xml_builder_aba1e1fe5161a5a4b4578eb95013accd8}{}\index{Xml\+Builder@{Xml\+Builder}!save\+Task@{save\+Task}}
+\index{save\+Task@{save\+Task}!Xml\+Builder@{Xml\+Builder}}
+\subsubsection[{save\+Task}]{\setlength{\rightskip}{0pt plus 5cm}void Xml\+Builder\+::save\+Task (
+\begin{DoxyParamCaption}
+\item[{Q\+Xml\+Stream\+Writer \&}]{stream, }
+\item[{{\bf Task} $\ast$}]{task}
+\end{DoxyParamCaption}
+)}\label{class_xml_builder_aba1e1fe5161a5a4b4578eb95013accd8}
+
+
+Accesseur de la validation du choix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file xmlbuilder.\+cpp.
+
+\hypertarget{class_xml_builder_a002af47c0db8797c0986cb659c8567c1}{}\index{Xml\+Builder@{Xml\+Builder}!write\+Output@{write\+Output}}
+\index{write\+Output@{write\+Output}!Xml\+Builder@{Xml\+Builder}}
+\subsubsection[{write\+Output}]{\setlength{\rightskip}{0pt plus 5cm}void Xml\+Builder\+::write\+Output (
+\begin{DoxyParamCaption}
+\item[{std\+::list$<$ {\bf Project} $\ast$ $>$ \&}]{project\+\_\+list, }
+\item[{std\+::list$<$ {\bf Scheduling} $\ast$ $>$ \&}]{scheduling\+\_\+list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_xml_builder_a002af47c0db8797c0986cb659c8567c1}
+
+
+Export (écriture) dans le fichier X\+M\+L. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em La} & liste des projets à écrire dans le fichier X\+M\+L \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_abstract_builder_a6c2fe99038d2cba8aa7e30b58b0d0aca}{Abstract\+Builder}.
+
+
+
+Definition at line 11 of file xmlbuilder.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{xmlbuilder_8h}{xmlbuilder.\+h}\item 
+\hyperlink{xmlbuilder_8cpp}{xmlbuilder.\+cpp}\end{DoxyCompactItemize}

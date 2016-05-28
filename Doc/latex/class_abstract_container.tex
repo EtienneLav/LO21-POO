@@ -1,0 +1,228 @@
+\hypertarget{class_abstract_container}{}\section{Abstract\+Container$<$ Type $>$ Class Template Reference}
+\label{class_abstract_container}\index{Abstract\+Container$<$ Type $>$@{Abstract\+Container$<$ Type $>$}}
+
+
+{\ttfamily \#include $<$abstractcontainer.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_abstract_container_1_1type_is_inferior}{type\+Is\+Inferior}
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_abstract_container_a8f74360ea2ee9747c6f0578dc96e4f15}{$\sim$\+Abstract\+Container} ()=0
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+list$<$ Type $\ast$ $>$ \& \hyperlink{class_abstract_container_a71283938f7d05e042d726087c98eec34}{get\+List} ()
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+void \hyperlink{class_abstract_container_a2b06c43bf4c6274bc41e52d5811aeb2d}{add\+Element} (Type $\ast$element)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+void \hyperlink{class_abstract_container_a78b14e1e103249dfb159d1305739f51a}{remove\+Element} (Type $\ast$element)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+void \hyperlink{class_abstract_container_a73625446959d1198bc7fbc7d9644b2ab}{sort} ()
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+void \hyperlink{class_abstract_container_af89f8e8de96fb60964ef167979be082c}{save} (const Q\+String \&f)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_abstract_container_a70e1448c23f2553552b11e3f5d447be8}{Abstract\+Container} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_abstract_container}{Abstract\+Container}. \end{DoxyCompactList}\item 
+\hyperlink{class_abstract_container_aa52de80e7b8c9377c72087cb70ae47a8}{Abstract\+Container} (const \hyperlink{class_abstract_container}{Abstract\+Container} \&copy)
+\begin{DoxyCompactList}\small\item\em Constructeur de recopie classe \hyperlink{class_abstract_container}{Abstract\+Container}. \end{DoxyCompactList}\item 
+\hyperlink{class_abstract_container}{Abstract\+Container} \& \hyperlink{class_abstract_container_ac8ee9b46b1c2047fd23536f5d1cb9122}{operator=} (const \hyperlink{class_abstract_container}{Abstract\+Container} \&copy)
+\begin{DoxyCompactList}\small\item\em Surcharge opérateur d\textquotesingle{}affectation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list$<$ Type $\ast$ $>$ \hyperlink{class_abstract_container_ae67aa7705ed73b443f6812ddc74a1056}{m\+\_\+liste}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Type$>$class Abstract\+Container$<$ Type $>$}
+
+\textbackslash{}brief D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N 
+
+Definition at line 24 of file abstractcontainer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_abstract_container_a70e1448c23f2553552b11e3f5d447be8}{}\index{Abstract\+Container@{Abstract\+Container}!Abstract\+Container@{Abstract\+Container}}
+\index{Abstract\+Container@{Abstract\+Container}!Abstract\+Container@{Abstract\+Container}}
+\subsubsection[{Abstract\+Container}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ {\bf Abstract\+Container}$<$ Type $>$\+::{\bf Abstract\+Container} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_abstract_container_a70e1448c23f2553552b11e3f5d447be8}
+
+
+Constructeur de la classe \hyperlink{class_abstract_container}{Abstract\+Container}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_abstract_container_aa52de80e7b8c9377c72087cb70ae47a8}{}\index{Abstract\+Container@{Abstract\+Container}!Abstract\+Container@{Abstract\+Container}}
+\index{Abstract\+Container@{Abstract\+Container}!Abstract\+Container@{Abstract\+Container}}
+\subsubsection[{Abstract\+Container}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ {\bf Abstract\+Container}$<$ Type $>$\+::{\bf Abstract\+Container} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Container}$<$ Type $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_abstract_container_aa52de80e7b8c9377c72087cb70ae47a8}
+
+
+Constructeur de recopie classe \hyperlink{class_abstract_container}{Abstract\+Container}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & référence constante sur un \hyperlink{class_abstract_container}{Abstract\+Container} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_abstract_container_a8f74360ea2ee9747c6f0578dc96e4f15}{}\index{Abstract\+Container@{Abstract\+Container}!````~Abstract\+Container@{$\sim$\+Abstract\+Container}}
+\index{````~Abstract\+Container@{$\sim$\+Abstract\+Container}!Abstract\+Container@{Abstract\+Container}}
+\subsubsection[{$\sim$\+Abstract\+Container}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ virtual {\bf Abstract\+Container}$<$ Type $>$\+::$\sim${\bf Abstract\+Container} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_abstract_container_a8f74360ea2ee9747c6f0578dc96e4f15}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+Desctructeur virtuel de la classe \hyperlink{class_abstract_container}{Abstract\+Container} 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_abstract_container_a2b06c43bf4c6274bc41e52d5811aeb2d}{}\index{Abstract\+Container@{Abstract\+Container}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!Abstract\+Container@{Abstract\+Container}}
+\subsubsection[{add\+Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ void {\bf Abstract\+Container}$<$ Type $>$\+::add\+Element (
+\begin{DoxyParamCaption}
+\item[{Type $\ast$}]{element}
+\end{DoxyParamCaption}
+)}\label{class_abstract_container_a2b06c43bf4c6274bc41e52d5811aeb2d}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & pointeur sur un élément à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_abstract_container_a71283938f7d05e042d726087c98eec34}{}\index{Abstract\+Container@{Abstract\+Container}!get\+List@{get\+List}}
+\index{get\+List@{get\+List}!Abstract\+Container@{Abstract\+Container}}
+\subsubsection[{get\+List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ list$<$Type $\ast$$>$\& {\bf Abstract\+Container}$<$ Type $>$\+::get\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_abstract_container_a71283938f7d05e042d726087c98eec34}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+liste 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file abstractcontainer.\+h.
+
+\hypertarget{class_abstract_container_ac8ee9b46b1c2047fd23536f5d1cb9122}{}\index{Abstract\+Container@{Abstract\+Container}!operator=@{operator=}}
+\index{operator=@{operator=}!Abstract\+Container@{Abstract\+Container}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ {\bf Abstract\+Container}\& {\bf Abstract\+Container}$<$ Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Abstract\+Container}$<$ Type $>$ \&}]{copy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_abstract_container_ac8ee9b46b1c2047fd23536f5d1cb9122}
+
+
+Surcharge opérateur d\textquotesingle{}affectation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & référence constante sur un \hyperlink{class_abstract_container}{Abstract\+Container} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_abstract_container_a78b14e1e103249dfb159d1305739f51a}{}\index{Abstract\+Container@{Abstract\+Container}!remove\+Element@{remove\+Element}}
+\index{remove\+Element@{remove\+Element}!Abstract\+Container@{Abstract\+Container}}
+\subsubsection[{remove\+Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ void {\bf Abstract\+Container}$<$ Type $>$\+::remove\+Element (
+\begin{DoxyParamCaption}
+\item[{Type $\ast$}]{element}
+\end{DoxyParamCaption}
+)}\label{class_abstract_container_a78b14e1e103249dfb159d1305739f51a}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & pointeur sur un élément à retirer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_abstract_container_af89f8e8de96fb60964ef167979be082c}{}\index{Abstract\+Container@{Abstract\+Container}!save@{save}}
+\index{save@{save}!Abstract\+Container@{Abstract\+Container}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ void {\bf Abstract\+Container}$<$ Type $>$\+::save (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{f}
+\end{DoxyParamCaption}
+)}\label{class_abstract_container_af89f8e8de96fb60964ef167979be082c}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & référence sur un Q\+String \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_abstract_container_a73625446959d1198bc7fbc7d9644b2ab}{}\index{Abstract\+Container@{Abstract\+Container}!sort@{sort}}
+\index{sort@{sort}!Abstract\+Container@{Abstract\+Container}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ void {\bf Abstract\+Container}$<$ Type $>$\+::sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_abstract_container_a73625446959d1198bc7fbc7d9644b2ab}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_abstract_container_ae67aa7705ed73b443f6812ddc74a1056}{}\index{Abstract\+Container@{Abstract\+Container}!m\+\_\+liste@{m\+\_\+liste}}
+\index{m\+\_\+liste@{m\+\_\+liste}!Abstract\+Container@{Abstract\+Container}}
+\subsubsection[{m\+\_\+liste}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type$>$ list$<$Type $\ast$$>$ {\bf Abstract\+Container}$<$ Type $>$\+::m\+\_\+liste\hspace{0.3cm}{\ttfamily [protected]}}\label{class_abstract_container_ae67aa7705ed73b443f6812ddc74a1056}
+
+
+Definition at line 45 of file abstractcontainer.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{abstractcontainer_8h}{abstractcontainer.\+h}\end{DoxyCompactItemize}

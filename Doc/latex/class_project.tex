@@ -1,0 +1,553 @@
+\hypertarget{class_project}{}\section{Project Class Reference}
+\label{class_project}\index{Project@{Project}}
+
+
+{\ttfamily \#include $<$project.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_a6313d992d20a4e752aa48b1bf74f1d0b}{Project} (Q\+String title, Q\+Date\+Time disponibility, Q\+Date\+Time deadline)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_project}{Project}. \end{DoxyCompactList}\item 
+\hyperlink{class_project_ad165d61b76ee86ee9c27fd987a2a7b9e}{$\sim$\+Project} ()
+\begin{DoxyCompactList}\small\item\em Desctructeur de la classe \hyperlink{class_project}{Project}. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_a2f8b6bc23d76567eaf47d34669e753f1}{add\+Element} (\hyperlink{class_task}{Task} $\ast$element)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, ajoute une \hyperlink{class_task}{Task} au \hyperlink{class_project}{Project}. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_a63aa6261d77fa27f70296aa96d1a25bf}{remove\+Element} (\hyperlink{class_task}{Task} $\ast$element)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, supprime une \hyperlink{class_task}{Task} au \hyperlink{class_project}{Project}. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_a4d92947dd9f030f188c7f97fd9674423}{delete\+Element} (\hyperlink{class_task}{Task} $\ast$element)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_abaf715709bc3997c7bee420be44ce608}{display} (Q\+Standard\+Item\+Model $\ast$m\+\_\+tree\+Model)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_project_aa11a1dc3fe61d16c85badf19c0fe8396}{get\+Title} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture du titre du \hyperlink{class_project}{Project}. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_a486fbd3e4fabb0d7cfce9ed95e729dbd}{set\+Title} (Q\+String title)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, modifie le titre du \hyperlink{class_project}{Project}. \end{DoxyCompactList}\item 
+Q\+Date\+Time \hyperlink{class_project_a68a1bfa7c0a4d88c4b5a4aad8d72ee66}{get\+Disponibility} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, de la date à laquelle le \hyperlink{class_project}{Project} peut démarrer. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_abe64d8cace31b87207b97dee02933379}{set\+Disponibility} (Q\+Date\+Time disponibility)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, modifie la date de départ potentielle du projet. \end{DoxyCompactList}\item 
+Q\+Date\+Time \hyperlink{class_project_a9d0cd16774bac90f658203334a6ffdae}{get\+Deadline} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, de la deadline du \hyperlink{class_project}{Project}. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_a0667ab9501284b798a0b4ee68f38729f}{set\+Deadline} (Q\+Date\+Time deadline)
+\begin{DoxyCompactList}\small\item\em Accesseur en écriture, modifie la deadline du \hyperlink{class_project}{Project}. \end{DoxyCompactList}\item 
+const vector$<$ \hyperlink{class_task}{Task} $\ast$ $>$ \& \hyperlink{class_project_a7bdf3e97406af34802af38d62b9ed57e}{get\+List} ()
+\begin{DoxyCompactList}\small\item\em Accesseur en lecture, récupère la liste des \hyperlink{class_task}{Task} du \hyperlink{class_project}{Project}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_ad491ada968c4188902ee08ce5f8382d2}{operator$<$} (const \hyperlink{class_project}{Project} \&b) const 
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur de comparaison $<$ sur des \hyperlink{class_project}{Project}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_ac751c4c639ce89861c3b67921e439810}{Project} (const \hyperlink{class_project}{Project} \&source)
+\begin{DoxyCompactList}\small\item\em Utilisée pour nettoyer les connexions entre taches à l\textquotesingle{}appel du destructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_project}{Project} \& \hyperlink{class_project_a2bdbeb52dc721131dd0d3d0bf3568236}{operator=} (const \hyperlink{class_project}{Project} \&source)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur d\textquotesingle{}affectation. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_a384c1f9e26ce142d5c04f1694947120a}{fill\+Dead\+List} (\hyperlink{class_task}{Task} $\ast$element)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_a2074003bbe370ea1b8db6f7cdfae2b28}{clean\+Prerequisite} (\hyperlink{class_task}{Task} $\ast$element)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_project_ac195bf7656682a495a15cc18355daf72}{m\+\_\+title}
+\item 
+Q\+Date\+Time \hyperlink{class_project_aa1a099bc7b5d5fce04b9f5cf49c86de4}{m\+\_\+disponibility}
+\begin{DoxyCompactList}\small\item\em Titre du projet. \end{DoxyCompactList}\item 
+Q\+Date\+Time \hyperlink{class_project_a0a6958e225544a4df8e9a772c44fcab9}{m\+\_\+deadline}
+\item 
+vector$<$ \hyperlink{class_task}{Task} $\ast$ $>$ \hyperlink{class_project_a355bcbeebfa82539904c5febda32085c}{m\+\_\+list}
+\begin{DoxyCompactList}\small\item\em Date de. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_task}{Task} $\ast$ $>$ \hyperlink{class_project_aa7e880f1492d4d98e4f6a12ef70cc56c}{m\+\_\+dead\+List}
+\begin{DoxyCompactList}\small\item\em Liste des taches composant le projet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_project_a06c624af20d5eed8215dc1c10dce88ab}{Abstract\+Builder}
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file project.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_project_ac751c4c639ce89861c3b67921e439810}{}\index{Project@{Project}!Project@{Project}}
+\index{Project@{Project}!Project@{Project}}
+\subsubsection[{Project}]{\setlength{\rightskip}{0pt plus 5cm}Project\+::\+Project (
+\begin{DoxyParamCaption}
+\item[{const {\bf Project} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_project_ac751c4c639ce89861c3b67921e439810}
+
+
+Utilisée pour nettoyer les connexions entre taches à l\textquotesingle{}appel du destructeur. 
+
+Constructeur de recopie classe \hyperlink{class_project}{Project} 
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence constante sur un \hyperlink{class_project}{Project} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un projet nouvellement crée 
+\end{DoxyReturn}
+\hypertarget{class_project_a6313d992d20a4e752aa48b1bf74f1d0b}{}\index{Project@{Project}!Project@{Project}}
+\index{Project@{Project}!Project@{Project}}
+\subsubsection[{Project}]{\setlength{\rightskip}{0pt plus 5cm}Project\+::\+Project (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{title, }
+\item[{Q\+Date\+Time}]{disponibility, }
+\item[{Q\+Date\+Time}]{deadline}
+\end{DoxyParamCaption}
+)}\label{class_project_a6313d992d20a4e752aa48b1bf74f1d0b}
+
+
+Constructeur de la classe \hyperlink{class_project}{Project}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & titre du projet de type Q\+String \\
+\hline
+{\em La} & deadline du projet de type Q\+Date\+Time \\
+\hline
+{\em Quand} & peut on démarrer le projet de type Q\+S\+Date\+Time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un projet nouvellement crée 
+\end{DoxyReturn}
+
+
+Definition at line 5 of file project.\+cpp.
+
+\hypertarget{class_project_ad165d61b76ee86ee9c27fd987a2a7b9e}{}\index{Project@{Project}!````~Project@{$\sim$\+Project}}
+\index{````~Project@{$\sim$\+Project}!Project@{Project}}
+\subsubsection[{$\sim$\+Project}]{\setlength{\rightskip}{0pt plus 5cm}Project\+::$\sim$\+Project (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_project_ad165d61b76ee86ee9c27fd987a2a7b9e}
+
+
+Desctructeur de la classe \hyperlink{class_project}{Project}. 
+
+
+
+Definition at line 14 of file project.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_project_a2f8b6bc23d76567eaf47d34669e753f1}{}\index{Project@{Project}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!Project@{Project}}
+\subsubsection[{add\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+::add\+Element (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{element}
+\end{DoxyParamCaption}
+)}\label{class_project_a2f8b6bc23d76567eaf47d34669e753f1}
+
+
+Accesseur en écriture, ajoute une \hyperlink{class_task}{Task} au \hyperlink{class_project}{Project}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence sur une \hyperlink{class_task}{Task} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file project.\+cpp.
+
+\hypertarget{class_project_a2074003bbe370ea1b8db6f7cdfae2b28}{}\index{Project@{Project}!clean\+Prerequisite@{clean\+Prerequisite}}
+\index{clean\+Prerequisite@{clean\+Prerequisite}!Project@{Project}}
+\subsubsection[{clean\+Prerequisite}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+::clean\+Prerequisite (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_project_a2074003bbe370ea1b8db6f7cdfae2b28}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence sur une \hyperlink{class_task}{Task} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file project.\+cpp.
+
+\hypertarget{class_project_a4d92947dd9f030f188c7f97fd9674423}{}\index{Project@{Project}!delete\+Element@{delete\+Element}}
+\index{delete\+Element@{delete\+Element}!Project@{Project}}
+\subsubsection[{delete\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+::delete\+Element (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{element}
+\end{DoxyParamCaption}
+)}\label{class_project_a4d92947dd9f030f188c7f97fd9674423}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence sur une \hyperlink{class_task}{Task} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file project.\+cpp.
+
+\hypertarget{class_project_abaf715709bc3997c7bee420be44ce608}{}\index{Project@{Project}!display@{display}}
+\index{display@{display}!Project@{Project}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+::display (
+\begin{DoxyParamCaption}
+\item[{Q\+Standard\+Item\+Model $\ast$}]{m\+\_\+tree\+Model}
+\end{DoxyParamCaption}
+)}\label{class_project_abaf715709bc3997c7bee420be44ce608}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file project.\+cpp.
+
+\hypertarget{class_project_a384c1f9e26ce142d5c04f1694947120a}{}\index{Project@{Project}!fill\+Dead\+List@{fill\+Dead\+List}}
+\index{fill\+Dead\+List@{fill\+Dead\+List}!Project@{Project}}
+\subsubsection[{fill\+Dead\+List}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+::fill\+Dead\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_project_a384c1f9e26ce142d5c04f1694947120a}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence sur une \hyperlink{class_task}{Task} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file project.\+cpp.
+
+\hypertarget{class_project_a9d0cd16774bac90f658203334a6ffdae}{}\index{Project@{Project}!get\+Deadline@{get\+Deadline}}
+\index{get\+Deadline@{get\+Deadline}!Project@{Project}}
+\subsubsection[{get\+Deadline}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Project\+::get\+Deadline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_project_a9d0cd16774bac90f658203334a6ffdae}
+
+
+Accesseur en lecture, de la deadline du \hyperlink{class_project}{Project}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La date en question de type Q\+Date\+Time 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file project.\+h.
+
+\hypertarget{class_project_a68a1bfa7c0a4d88c4b5a4aad8d72ee66}{}\index{Project@{Project}!get\+Disponibility@{get\+Disponibility}}
+\index{get\+Disponibility@{get\+Disponibility}!Project@{Project}}
+\subsubsection[{get\+Disponibility}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Project\+::get\+Disponibility (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_project_a68a1bfa7c0a4d88c4b5a4aad8d72ee66}
+
+
+Accesseur en lecture, de la date à laquelle le \hyperlink{class_project}{Project} peut démarrer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La date en question de type Q\+Date\+Time 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file project.\+h.
+
+\hypertarget{class_project_a7bdf3e97406af34802af38d62b9ed57e}{}\index{Project@{Project}!get\+List@{get\+List}}
+\index{get\+List@{get\+List}!Project@{Project}}
+\subsubsection[{get\+List}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<${\bf Task} $\ast$$>$\& Project\+::get\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_project_a7bdf3e97406af34802af38d62b9ed57e}
+
+
+Accesseur en lecture, récupère la liste des \hyperlink{class_task}{Task} du \hyperlink{class_project}{Project}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La liste constante des \hyperlink{class_task}{Task} du \hyperlink{class_project}{Project} 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file project.\+h.
+
+\hypertarget{class_project_aa11a1dc3fe61d16c85badf19c0fe8396}{}\index{Project@{Project}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!Project@{Project}}
+\subsubsection[{get\+Title}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Project\+::get\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_project_aa11a1dc3fe61d16c85badf19c0fe8396}
+
+
+Accesseur en lecture du titre du \hyperlink{class_project}{Project}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le titre du \hyperlink{class_project}{Project} dans une Q\+String 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file project.\+h.
+
+\hypertarget{class_project_ad491ada968c4188902ee08ce5f8382d2}{}\index{Project@{Project}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Project@{Project}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Project\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Project} \&}]{b}
+\end{DoxyParamCaption}
+) const}\label{class_project_ad491ada968c4188902ee08ce5f8382d2}
+
+
+Surcharge de l\textquotesingle{}opérateur de comparaison $<$ sur des \hyperlink{class_project}{Project}. 
+
+Renvoie true sur la deadline du \hyperlink{class_project}{Project} sur lequel on appelle la méthode est avant celui passé en paramètre 
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence constante sur une project \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un booléen 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file project.\+cpp.
+
+\hypertarget{class_project_a2bdbeb52dc721131dd0d3d0bf3568236}{}\index{Project@{Project}!operator=@{operator=}}
+\index{operator=@{operator=}!Project@{Project}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Project}\& Project\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Project} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_project_a2bdbeb52dc721131dd0d3d0bf3568236}
+
+
+Surcharge de l\textquotesingle{}opérateur d\textquotesingle{}affectation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence constante sur un \hyperlink{class_project}{Project} à cloner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Une référence sur un projet 
+\end{DoxyReturn}
+\hypertarget{class_project_a63aa6261d77fa27f70296aa96d1a25bf}{}\index{Project@{Project}!remove\+Element@{remove\+Element}}
+\index{remove\+Element@{remove\+Element}!Project@{Project}}
+\subsubsection[{remove\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+::remove\+Element (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} $\ast$}]{element}
+\end{DoxyParamCaption}
+)}\label{class_project_a63aa6261d77fa27f70296aa96d1a25bf}
+
+
+Accesseur en écriture, supprime une \hyperlink{class_task}{Task} au \hyperlink{class_project}{Project}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & référence sur une \hyperlink{class_task}{Task} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file project.\+cpp.
+
+\hypertarget{class_project_a0667ab9501284b798a0b4ee68f38729f}{}\index{Project@{Project}!set\+Deadline@{set\+Deadline}}
+\index{set\+Deadline@{set\+Deadline}!Project@{Project}}
+\subsubsection[{set\+Deadline}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+::set\+Deadline (
+\begin{DoxyParamCaption}
+\item[{Q\+Date\+Time}]{deadline}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_project_a0667ab9501284b798a0b4ee68f38729f}
+
+
+Accesseur en écriture, modifie la deadline du \hyperlink{class_project}{Project}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em La} & date en question de type Q\+Date\+Time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file project.\+h.
+
+\hypertarget{class_project_abe64d8cace31b87207b97dee02933379}{}\index{Project@{Project}!set\+Disponibility@{set\+Disponibility}}
+\index{set\+Disponibility@{set\+Disponibility}!Project@{Project}}
+\subsubsection[{set\+Disponibility}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+::set\+Disponibility (
+\begin{DoxyParamCaption}
+\item[{Q\+Date\+Time}]{disponibility}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_project_abe64d8cace31b87207b97dee02933379}
+
+
+Accesseur en écriture, modifie la date de départ potentielle du projet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em La} & date en question de type Q\+Date\+Time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file project.\+h.
+
+\hypertarget{class_project_a486fbd3e4fabb0d7cfce9ed95e729dbd}{}\index{Project@{Project}!set\+Title@{set\+Title}}
+\index{set\+Title@{set\+Title}!Project@{Project}}
+\subsubsection[{set\+Title}]{\setlength{\rightskip}{0pt plus 5cm}void Project\+::set\+Title (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_project_a486fbd3e4fabb0d7cfce9ed95e729dbd}
+
+
+Accesseur en écriture, modifie le titre du \hyperlink{class_project}{Project}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Le} & titre du projet de type Q\+String \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file project.\+h.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_project_a06c624af20d5eed8215dc1c10dce88ab}{}\index{Project@{Project}!Abstract\+Builder@{Abstract\+Builder}}
+\index{Abstract\+Builder@{Abstract\+Builder}!Project@{Project}}
+\subsubsection[{Abstract\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Abstract\+Builder}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_project_a06c624af20d5eed8215dc1c10dce88ab}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+
+Definition at line 56 of file project.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_project_a0a6958e225544a4df8e9a772c44fcab9}{}\index{Project@{Project}!m\+\_\+deadline@{m\+\_\+deadline}}
+\index{m\+\_\+deadline@{m\+\_\+deadline}!Project@{Project}}
+\subsubsection[{m\+\_\+deadline}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Project\+::m\+\_\+deadline\hspace{0.3cm}{\ttfamily [protected]}}\label{class_project_a0a6958e225544a4df8e9a772c44fcab9}
+
+
+Definition at line 25 of file project.\+h.
+
+\hypertarget{class_project_aa7e880f1492d4d98e4f6a12ef70cc56c}{}\index{Project@{Project}!m\+\_\+dead\+List@{m\+\_\+dead\+List}}
+\index{m\+\_\+dead\+List@{m\+\_\+dead\+List}!Project@{Project}}
+\subsubsection[{m\+\_\+dead\+List}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Task} $\ast$$>$ Project\+::m\+\_\+dead\+List\hspace{0.3cm}{\ttfamily [protected]}}\label{class_project_aa7e880f1492d4d98e4f6a12ef70cc56c}
+
+
+Liste des taches composant le projet. 
+
+
+
+Definition at line 27 of file project.\+h.
+
+\hypertarget{class_project_aa1a099bc7b5d5fce04b9f5cf49c86de4}{}\index{Project@{Project}!m\+\_\+disponibility@{m\+\_\+disponibility}}
+\index{m\+\_\+disponibility@{m\+\_\+disponibility}!Project@{Project}}
+\subsubsection[{m\+\_\+disponibility}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Date\+Time Project\+::m\+\_\+disponibility\hspace{0.3cm}{\ttfamily [protected]}}\label{class_project_aa1a099bc7b5d5fce04b9f5cf49c86de4}
+
+
+Titre du projet. 
+
+
+
+Definition at line 24 of file project.\+h.
+
+\hypertarget{class_project_a355bcbeebfa82539904c5febda32085c}{}\index{Project@{Project}!m\+\_\+list@{m\+\_\+list}}
+\index{m\+\_\+list@{m\+\_\+list}!Project@{Project}}
+\subsubsection[{m\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Task} $\ast$$>$ Project\+::m\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}\label{class_project_a355bcbeebfa82539904c5febda32085c}
+
+
+Date de. 
+
+
+
+Definition at line 26 of file project.\+h.
+
+\hypertarget{class_project_ac195bf7656682a495a15cc18355daf72}{}\index{Project@{Project}!m\+\_\+title@{m\+\_\+title}}
+\index{m\+\_\+title@{m\+\_\+title}!Project@{Project}}
+\subsubsection[{m\+\_\+title}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Project\+::m\+\_\+title\hspace{0.3cm}{\ttfamily [protected]}}\label{class_project_ac195bf7656682a495a15cc18355daf72}
+
+
+Definition at line 23 of file project.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{project_8h}{project.\+h}\item 
+\hyperlink{project_8cpp}{project.\+cpp}\end{DoxyCompactItemize}

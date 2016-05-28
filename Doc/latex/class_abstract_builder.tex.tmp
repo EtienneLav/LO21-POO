@@ -1,0 +1,202 @@
+\hypertarget{class_abstract_builder}{}\section{Abstract\+Builder Class Reference}
+\label{class_abstract_builder}\index{Abstract\+Builder@{Abstract\+Builder}}
+
+
+{\ttfamily \#include $<$abstractbuilder.\+h$>$}
+
+
+
+Inheritance diagram for Abstract\+Builder\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_abstract_builder_a9571652b05a3f52e498d0c20666011b6}{Abstract\+Builder} (Q\+String path)
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+\hyperlink{class_abstract_builder_ae410990d04ec42c6c0aa8864ab205daa}{$\sim$\+Abstract\+Builder} ()
+\begin{DoxyCompactList}\small\item\em Desctructeur de la classe \hyperlink{class_abstract_builder}{Abstract\+Builder}. \end{DoxyCompactList}\item 
+void \hyperlink{class_abstract_builder_a4284d0202711d7c3fdf720c4aab2042a}{set\+File\+Path} (Q\+String path)
+\begin{DoxyCompactList}\small\item\em Ajouter un chemin. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_abstract_builder_a6c2fe99038d2cba8aa7e30b58b0d0aca}{write\+Output} (std\+::list$<$ \hyperlink{class_project}{Project} $\ast$ $>$ \&project\+\_\+list, std\+::list$<$ \hyperlink{class_scheduling}{Scheduling} $\ast$ $>$ \&scheduling\+\_\+list)=0
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_abstract_builder_a75176f834f24994e541151dc4fb130ec}{read\+Input} (\hyperlink{class_project_manager}{Project\+Manager} \&project\+Manager, \hyperlink{class_scheduling_manager}{Scheduling\+Manager} \&scheduling\+Manager)=0
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_abstract_builder_a56d41099ae7f85cb8db3727eeb25e157}{m\+\_\+file\+\_\+path}
+\item 
+std\+::map$<$ \hyperlink{class_task}{Task} $\ast$, int $>$ \hyperlink{class_abstract_builder_a24d18f9efb84372970108fdea9744491}{m\+\_\+pointer\+\_\+to\+\_\+id}
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+std\+::map$<$ int, \hyperlink{class_task}{Task} $\ast$ $>$ \hyperlink{class_abstract_builder_ad999710b1a3cc86d7dcb5c1c520c8c94}{m\+\_\+id\+\_\+to\+\_\+pointer}
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\item 
+int \hyperlink{class_abstract_builder_a2edebb0d9bf9c0fdbb744af5f1db5a29}{m\+\_\+id\+\_\+incrementer}
+\begin{DoxyCompactList}\small\item\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\textbackslash{}brief D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N 
+
+Definition at line 20 of file abstractbuilder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_abstract_builder_a9571652b05a3f52e498d0c20666011b6}{}\index{Abstract\+Builder@{Abstract\+Builder}!Abstract\+Builder@{Abstract\+Builder}}
+\index{Abstract\+Builder@{Abstract\+Builder}!Abstract\+Builder@{Abstract\+Builder}}
+\subsubsection[{Abstract\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}Abstract\+Builder\+::\+Abstract\+Builder (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_abstract_builder_a9571652b05a3f52e498d0c20666011b6}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+Constructeur de la classe \hyperlink{class_abstract_builder}{Abstract\+Builder} 
+\begin{DoxyParams}{Parameters}
+{\em path} & \+: D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file abstractbuilder.\+h.
+
+\hypertarget{class_abstract_builder_ae410990d04ec42c6c0aa8864ab205daa}{}\index{Abstract\+Builder@{Abstract\+Builder}!````~Abstract\+Builder@{$\sim$\+Abstract\+Builder}}
+\index{````~Abstract\+Builder@{$\sim$\+Abstract\+Builder}!Abstract\+Builder@{Abstract\+Builder}}
+\subsubsection[{$\sim$\+Abstract\+Builder}]{\setlength{\rightskip}{0pt plus 5cm}Abstract\+Builder\+::$\sim$\+Abstract\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_abstract_builder_ae410990d04ec42c6c0aa8864ab205daa}
+
+
+Desctructeur de la classe \hyperlink{class_abstract_builder}{Abstract\+Builder}. 
+
+
+
+Definition at line 4 of file abstractbuilder.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_abstract_builder_a75176f834f24994e541151dc4fb130ec}{}\index{Abstract\+Builder@{Abstract\+Builder}!read\+Input@{read\+Input}}
+\index{read\+Input@{read\+Input}!Abstract\+Builder@{Abstract\+Builder}}
+\subsubsection[{read\+Input}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Abstract\+Builder\+::read\+Input (
+\begin{DoxyParamCaption}
+\item[{{\bf Project\+Manager} \&}]{project\+Manager, }
+\item[{{\bf Scheduling\+Manager} \&}]{scheduling\+Manager}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_abstract_builder_a75176f834f24994e541151dc4fb130ec}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_xml_builder_ac42cb9c7614a3414609cdcaf2d0cb858}{Xml\+Builder}.
+
+\hypertarget{class_abstract_builder_a4284d0202711d7c3fdf720c4aab2042a}{}\index{Abstract\+Builder@{Abstract\+Builder}!set\+File\+Path@{set\+File\+Path}}
+\index{set\+File\+Path@{set\+File\+Path}!Abstract\+Builder@{Abstract\+Builder}}
+\subsubsection[{set\+File\+Path}]{\setlength{\rightskip}{0pt plus 5cm}void Abstract\+Builder\+::set\+File\+Path (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_abstract_builder_a4284d0202711d7c3fdf720c4aab2042a}
+
+
+Ajouter un chemin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & chaine de caractère contenant le chemin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file abstractbuilder.\+h.
+
+\hypertarget{class_abstract_builder_a6c2fe99038d2cba8aa7e30b58b0d0aca}{}\index{Abstract\+Builder@{Abstract\+Builder}!write\+Output@{write\+Output}}
+\index{write\+Output@{write\+Output}!Abstract\+Builder@{Abstract\+Builder}}
+\subsubsection[{write\+Output}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Abstract\+Builder\+::write\+Output (
+\begin{DoxyParamCaption}
+\item[{std\+::list$<$ {\bf Project} $\ast$ $>$ \&}]{project\+\_\+list, }
+\item[{std\+::list$<$ {\bf Scheduling} $\ast$ $>$ \&}]{scheduling\+\_\+list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_abstract_builder_a6c2fe99038d2cba8aa7e30b58b0d0aca}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_xml_builder_a002af47c0db8797c0986cb659c8567c1}{Xml\+Builder}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_abstract_builder_a56d41099ae7f85cb8db3727eeb25e157}{}\index{Abstract\+Builder@{Abstract\+Builder}!m\+\_\+file\+\_\+path@{m\+\_\+file\+\_\+path}}
+\index{m\+\_\+file\+\_\+path@{m\+\_\+file\+\_\+path}!Abstract\+Builder@{Abstract\+Builder}}
+\subsubsection[{m\+\_\+file\+\_\+path}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Abstract\+Builder\+::m\+\_\+file\+\_\+path\hspace{0.3cm}{\ttfamily [protected]}}\label{class_abstract_builder_a56d41099ae7f85cb8db3727eeb25e157}
+
+
+Definition at line 23 of file abstractbuilder.\+h.
+
+\hypertarget{class_abstract_builder_a2edebb0d9bf9c0fdbb744af5f1db5a29}{}\index{Abstract\+Builder@{Abstract\+Builder}!m\+\_\+id\+\_\+incrementer@{m\+\_\+id\+\_\+incrementer}}
+\index{m\+\_\+id\+\_\+incrementer@{m\+\_\+id\+\_\+incrementer}!Abstract\+Builder@{Abstract\+Builder}}
+\subsubsection[{m\+\_\+id\+\_\+incrementer}]{\setlength{\rightskip}{0pt plus 5cm}int Abstract\+Builder\+::m\+\_\+id\+\_\+incrementer\hspace{0.3cm}{\ttfamily [protected]}}\label{class_abstract_builder_a2edebb0d9bf9c0fdbb744af5f1db5a29}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+
+Definition at line 26 of file abstractbuilder.\+h.
+
+\hypertarget{class_abstract_builder_ad999710b1a3cc86d7dcb5c1c520c8c94}{}\index{Abstract\+Builder@{Abstract\+Builder}!m\+\_\+id\+\_\+to\+\_\+pointer@{m\+\_\+id\+\_\+to\+\_\+pointer}}
+\index{m\+\_\+id\+\_\+to\+\_\+pointer@{m\+\_\+id\+\_\+to\+\_\+pointer}!Abstract\+Builder@{Abstract\+Builder}}
+\subsubsection[{m\+\_\+id\+\_\+to\+\_\+pointer}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$int,{\bf Task}$\ast$$>$ Abstract\+Builder\+::m\+\_\+id\+\_\+to\+\_\+pointer\hspace{0.3cm}{\ttfamily [protected]}}\label{class_abstract_builder_ad999710b1a3cc86d7dcb5c1c520c8c94}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+
+Definition at line 25 of file abstractbuilder.\+h.
+
+\hypertarget{class_abstract_builder_a24d18f9efb84372970108fdea9744491}{}\index{Abstract\+Builder@{Abstract\+Builder}!m\+\_\+pointer\+\_\+to\+\_\+id@{m\+\_\+pointer\+\_\+to\+\_\+id}}
+\index{m\+\_\+pointer\+\_\+to\+\_\+id@{m\+\_\+pointer\+\_\+to\+\_\+id}!Abstract\+Builder@{Abstract\+Builder}}
+\subsubsection[{m\+\_\+pointer\+\_\+to\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<${\bf Task}$\ast$,int$>$ Abstract\+Builder\+::m\+\_\+pointer\+\_\+to\+\_\+id\hspace{0.3cm}{\ttfamily [protected]}}\label{class_abstract_builder_a24d18f9efb84372970108fdea9744491}
+
+
+D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N. 
+
+
+
+Definition at line 24 of file abstractbuilder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{abstractbuilder_8h}{abstractbuilder.\+h}\item 
+\hyperlink{abstractbuilder_8cpp}{abstractbuilder.\+cpp}\end{DoxyCompactItemize}

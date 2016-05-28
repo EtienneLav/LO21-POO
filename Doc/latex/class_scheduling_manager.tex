@@ -1,0 +1,192 @@
+\hypertarget{class_scheduling_manager}{}\section{Scheduling\+Manager Class Reference}
+\label{class_scheduling_manager}\index{Scheduling\+Manager@{Scheduling\+Manager}}
+
+
+Classe qui gère les programmations, implémentée avec le Design Pattern Singleton.  
+
+
+
+
+{\ttfamily \#include $<$schedulingmanager.\+h$>$}
+
+
+
+Inheritance diagram for Scheduling\+Manager\+:
+% FIG 0
+
+
+Collaboration diagram for Scheduling\+Manager\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+list$<$ const \hyperlink{class_scheduling}{Scheduling} $\ast$ $>$ \hyperlink{class_scheduling_manager_a84c5f7f09108fe303942333152d7f591}{find\+Task\+Schedulings} (\hyperlink{class_unique_task}{Unique\+Task} $\ast$element)
+\item 
+void \hyperlink{class_scheduling_manager_a5d25071597027e83aa1f83e918f2043a}{add\+Element} (Q\+Date\+Time date, Q\+Time duration, Q\+String title)
+\begin{DoxyCompactList}\small\item\em Ajoute une activité à la programmation. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduling_manager_a995d7f8e5ede94b26609f027ae11f589}{add\+Element} (Q\+Date\+Time date, Q\+Time duration, \hyperlink{class_unique_task}{Unique\+Task} $\ast$task)
+\begin{DoxyCompactList}\small\item\em Planifie une tache déjà existante. \end{DoxyCompactList}\item 
+void \hyperlink{class_scheduling_manager_ac18b6f093b29479046df357bb8b6c220}{remove\+Element} (\hyperlink{class_scheduling}{Scheduling} $\ast$element)
+\begin{DoxyCompactList}\small\item\em Retire un élément de la programmation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_scheduling_manager}{Scheduling\+Manager} \& \hyperlink{class_scheduling_manager_ae9501f966e2ae1eb84299c53726d0a89}{get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Le Handler Static permettant de gérer le \hyperlink{class_scheduling_manager}{Scheduling\+Manager} unique. \end{DoxyCompactList}\item 
+static void \hyperlink{class_scheduling_manager_a8ec86818fe76fcd9ef7b8207ed6bed76}{free\+Instance} ()
+\begin{DoxyCompactList}\small\item\em La méthode static permettant de libérer l\textquotesingle{}unique instance de type \hyperlink{class_scheduling_manager}{Scheduling\+Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe qui gère les programmations, implémentée avec le Design Pattern Singleton. 
+
+Definition at line 21 of file schedulingmanager.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_scheduling_manager_a5d25071597027e83aa1f83e918f2043a}{}\index{Scheduling\+Manager@{Scheduling\+Manager}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!Scheduling\+Manager@{Scheduling\+Manager}}
+\subsubsection[{add\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduling\+Manager\+::add\+Element (
+\begin{DoxyParamCaption}
+\item[{Q\+Date\+Time}]{date, }
+\item[{Q\+Time}]{duration, }
+\item[{Q\+String}]{title}
+\end{DoxyParamCaption}
+)}\label{class_scheduling_manager_a5d25071597027e83aa1f83e918f2043a}
+
+
+Ajoute une activité à la programmation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em La} & date se l\textquotesingle{}activité \\
+\hline
+{\em la} & durée de l\textquotesingle{}activité \\
+\hline
+{\em le} & titre de l\textquotesingle{}activité \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file schedulingmanager.\+cpp.
+
+\hypertarget{class_scheduling_manager_a995d7f8e5ede94b26609f027ae11f589}{}\index{Scheduling\+Manager@{Scheduling\+Manager}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!Scheduling\+Manager@{Scheduling\+Manager}}
+\subsubsection[{add\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduling\+Manager\+::add\+Element (
+\begin{DoxyParamCaption}
+\item[{Q\+Date\+Time}]{date, }
+\item[{Q\+Time}]{duration, }
+\item[{{\bf Unique\+Task} $\ast$}]{task}
+\end{DoxyParamCaption}
+)}\label{class_scheduling_manager_a995d7f8e5ede94b26609f027ae11f589}
+
+
+Planifie une tache déjà existante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Une} & date \\
+\hline
+{\em Une} & durée \\
+\hline
+{\em Un} & pointeur vers une tache \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file schedulingmanager.\+cpp.
+
+\hypertarget{class_scheduling_manager_a84c5f7f09108fe303942333152d7f591}{}\index{Scheduling\+Manager@{Scheduling\+Manager}!find\+Task\+Schedulings@{find\+Task\+Schedulings}}
+\index{find\+Task\+Schedulings@{find\+Task\+Schedulings}!Scheduling\+Manager@{Scheduling\+Manager}}
+\subsubsection[{find\+Task\+Schedulings}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ const {\bf Scheduling} $\ast$ $>$ Scheduling\+Manager\+::find\+Task\+Schedulings (
+\begin{DoxyParamCaption}
+\item[{{\bf Unique\+Task} $\ast$}]{element}
+\end{DoxyParamCaption}
+)}\label{class_scheduling_manager_a84c5f7f09108fe303942333152d7f591}
+
+
+Definition at line 38 of file schedulingmanager.\+cpp.
+
+\hypertarget{class_scheduling_manager_a8ec86818fe76fcd9ef7b8207ed6bed76}{}\index{Scheduling\+Manager@{Scheduling\+Manager}!free\+Instance@{free\+Instance}}
+\index{free\+Instance@{free\+Instance}!Scheduling\+Manager@{Scheduling\+Manager}}
+\subsubsection[{free\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduling\+Manager\+::free\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_scheduling_manager_a8ec86818fe76fcd9ef7b8207ed6bed76}
+
+
+La méthode static permettant de libérer l\textquotesingle{}unique instance de type \hyperlink{class_scheduling_manager}{Scheduling\+Manager}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file schedulingmanager.\+cpp.
+
+\hypertarget{class_scheduling_manager_ae9501f966e2ae1eb84299c53726d0a89}{}\index{Scheduling\+Manager@{Scheduling\+Manager}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Scheduling\+Manager@{Scheduling\+Manager}}
+\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scheduling\+Manager} \& Scheduling\+Manager\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_scheduling_manager_ae9501f966e2ae1eb84299c53726d0a89}
+
+
+Le Handler Static permettant de gérer le \hyperlink{class_scheduling_manager}{Scheduling\+Manager} unique. 
+
+La méthode static permettant de renvoyer l\textquotesingle{}instance créée du \hyperlink{class_scheduling_manager}{Scheduling\+Manager} 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Une référence sur le \hyperlink{class_scheduling_manager}{Scheduling\+Manager} instancié de manière unique 
+\end{DoxyReturn}
+
+
+Definition at line 19 of file schedulingmanager.\+cpp.
+
+\hypertarget{class_scheduling_manager_ac18b6f093b29479046df357bb8b6c220}{}\index{Scheduling\+Manager@{Scheduling\+Manager}!remove\+Element@{remove\+Element}}
+\index{remove\+Element@{remove\+Element}!Scheduling\+Manager@{Scheduling\+Manager}}
+\subsubsection[{remove\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduling\+Manager\+::remove\+Element (
+\begin{DoxyParamCaption}
+\item[{{\bf Scheduling} $\ast$}]{element}
+\end{DoxyParamCaption}
+)}\label{class_scheduling_manager_ac18b6f093b29479046df357bb8b6c220}
+
+
+Retire un élément de la programmation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Un} & pointeur vers l\textquotesingle{}élément à retirer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 159 of file schedulingmanager.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{schedulingmanager_8h}{schedulingmanager.\+h}\item 
+\hyperlink{schedulingmanager_8cpp}{schedulingmanager.\+cpp}\end{DoxyCompactItemize}
